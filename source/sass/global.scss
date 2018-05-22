@@ -1,0 +1,28 @@
+body {
+  font-family: "21Cent", "Times New Roman", serif;
+  font-size:20px;
+  line-height: 18px;
+  background-color: #ffffff;
+  color: black;
+  padding: 0;
+  margin: 0;
+}
+
+img,
+video,
+audio {
+  max-width: 100%;
+  height: auto;
+}
+
+label,
+button,
+input,
+select {
+  cursor: pointer;
+}
+
+input {
+  font-family: inherit;
+}
+
