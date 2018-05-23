@@ -67,19 +67,19 @@
 
     <section class="pensions" id="pensions">
       <h2 class="titles">Пансионаты</h2>
-      <ul class="pensions__list">
-        <li class="pensions__item">
+      <ul class="pensions__list  address">
+        <li class="address__item">
           <h3 class="titles">Пенино</h3>
-          <p class="pensions__address">
+          <p class="address__contacts">
             Россия, Москва<br>
             поселение Десёновское<br>
             д. Пенино<br>
             ул. Московская, 6
           </p>
         </li>
-        <li class="pensions__item">
+        <li class="address__item">
           <h3 class="titles">Орловка</h3>
-          <p class="pensions__address">
+          <p class="address__contacts">
             Россия, Москва<br>
             Щелковский район<br>
             д. Орловка<br>
@@ -131,8 +131,8 @@
 
       <button class="price-btn  callback">Заказать звонок</button>
 
+      <p class="price__features-text">В стоимость входит:</p>
       <ul class="price__features">
-        <p class="price__features-text">В стоимость входит:</p>
         <li class="price__features-item">
           <b class="price__features-title">24-часовой уход за постояльцами</b>
           <p class="price__features-description">Наш персонал обеспечивает круглосуточный контроль за физическим и психологическим здоровьем пациентов</p>
@@ -277,6 +277,38 @@
     <section class="contacts" id="contacts">
         <h2 class="titles">Контакты</h2>
         <p class="contacts__description">Наш пансионат это то место, где можно существенно улучшить свое здоровье! Конечно, если правильно его подобрать, зная все особенности природных лечебных факторов и медицинские возможности каждой конкретной здравницы.</p>
+        <div class="contacts__inner">
+          <ul class="contacts__list  address">
+            <li class="address__item">
+              <h3 class="titles">Пенино</h3>
+              <p class="address__contacts">
+                Россия, Москва<br>
+                поселение Десёновское<br>
+                д. Пенино<br>
+                ул. Московская, 6
+              </p>
+            </li>
+            <li class="address__item">
+              <h3 class="titles">Орловка</h3>
+              <p class="address__contacts">
+                Россия, Москва<br>
+                Щелковский район<br>
+                д. Орловка<br>
+                ул. Новый дом, 16
+              </p>
+              <p class="contacts__tel">+7 985 787 94 13</p>
+              <p class="contacts__email">dom.penino@gmail.com</p>
+            </li>
+          </ul>
+          <form class="contacts__form" action="#">
+            <label class="contacts__label" for="name">Имя</label>
+            <input class="contacts__input" type="text" name="name" id="name" placeholder="Имя">
+            <label class="contacts__label" for="email">e-mail</label>
+            <input class="contacts__input" type="email" name="email" id="email" placeholder="e-mail">
+            <textarea name="contacts__field" id="contacts__field" cols="30" rows="10">Ваш текст</textarea>
+            <button class="form__submit-btn">Отправить</button>
+          </form>
+        </div>
     </section>
 
   </main>
