@@ -1,7 +1,7 @@
 body {
   font-family: "21Cent", "Times New Roman", serif;
   font-size: 20px;
-  line-height: 18px;
+  line-height: 22px;
   background-color: #ffffff;
   color: black;
   padding: 0;
@@ -24,4 +24,10 @@ select {
 
 input {
   font-family: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }

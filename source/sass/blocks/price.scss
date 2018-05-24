@@ -1,0 +1,145 @@
+.price {
+  background-image: url("../img/leaf-bg-left.png");
+  background-repeat: no-repeat;
+  background-position: left 200px;
+  padding: 40px 0;
+}
+
+.price__inner {
+  @include container();
+}
+
+.price__description {
+  text-align: center;
+}
+
+.price__item-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.price__item {
+  color: $color-red;
+  font-size: 22px;
+  line-height: 30px;
+
+  &--orlovka {
+    color: $color-1;
+  }
+}
+
+.price__list {
+
+}
+
+.price__list-item {
+  position: relative;
+  padding: 20px;
+  margin-bottom: 45px;
+  background-color: blue;
+  background-image: url("../img/price-bg-1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  color: #ffffff;
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -30px;
+    width: 70px;
+    height: 70px;
+    background-color: red;
+    background-image: url("../img/marker-icon-1.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateX(-50%);
+  }
+}
+
+.price__list-title {
+  padding: 5px 0;
+  border-bottom: 1px solid #ffffff;
+}
+
+.price__numbers {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.price__features {
+
+}
+
+.price__features-item {
+  position: relative;
+  padding-left: 60px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-color: tomato;
+    background-image: url("../img/clock.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--diet::before {
+    background-image: url("../img/food.svg");
+  }
+
+  &--doctor::before {
+    background-image: url("../img/doctor.svg");
+  }
+
+  &--consult::before {
+    background-image: url("../img/consult.svg");
+  }
+
+  &--health-control::before {
+    background-image: url("../img/health.svg");
+  }
+
+  &--internet::before {
+    background-image: url("../img/internet.svg");
+  }
+
+  &--drugs::before {
+    background-image: url("../img/drugs.svg");
+  }
+
+  &--hygiene::before {
+    background-image: url("../img/bath.svg");
+  }
+
+  &--special-conditions::before {
+    background-image: url("../img/special.svg");
+  }
+
+  &--washing::before {
+    background-image: url("../img/iron.svg");
+  }
+
+  &--medicine-equipment::before {
+    background-image: url("../img/medicine.svg");
+  }
+
+  &--hobby::before {
+    background-image: url("../img/hobby.svg");
+  }
+
+  &--reabilitation::before {
+    background-image: url("../img/reabilitation.svg");
+  }
+}
+
+.price__features-title {
+
+}

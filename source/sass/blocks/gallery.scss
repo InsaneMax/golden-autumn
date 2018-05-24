@@ -1,0 +1,38 @@
+.gallery {
+  background-color: $color-2;
+  padding: 40px 0;
+}
+
+.gallery__list-wrapper {
+  @include container();
+  display: flex;
+  justify-content: center;
+}
+
+.gallery__item {
+  position: relative;
+  padding: 50px 20px 0 20px;
+  margin-bottom: 30px;
+  color: $color-red;
+  font-size: 22px;
+  line-height: 26px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 70px;
+    height: 50px;
+    background-image: url("../img/house-1.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--orlovka-icon {
+    color: $color-1;
+
+    &::before {
+      background-image: url("../img/house-2.svg");
+    }
+  }
+}

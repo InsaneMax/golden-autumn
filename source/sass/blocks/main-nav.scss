@@ -1,0 +1,35 @@
+.main-nav {
+  color: #ffffff;
+  padding: 20px 10px;
+  background-color: $color-3;
+  order: 1;
+}
+
+.main-nav__burger {
+  @include container();
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav__btn {
+  font-size: 0;
+  width: 35px;
+  height: 35px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/burger.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.main-nav__booking {
+  display: flex;
+  flex-direction: column;
+  font-family: "Verdana";
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.main-nav__link {
+  color: #ffffff;
+}

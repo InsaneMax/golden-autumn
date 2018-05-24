@@ -1,0 +1,15 @@
+.about {
+  background-image: url("../img/leaf-bg-right.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  padding: 20px 0;
+}
+
+.about__inner {
+  @include container();
+}
+
+.about__welcome {
+  display: block;
+  text-align: center;
+}
