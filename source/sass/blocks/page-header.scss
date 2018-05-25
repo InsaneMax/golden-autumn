@@ -24,8 +24,46 @@
 .page-header__title {
   margin: 0;
   padding: 30px 0;
-  border-top: 1px solid $color-1;
   text-transform: uppercase;
   font-size: 30px;
   line-height: 40px;
+}
+
+.page-header__decorative {
+  display: inline-block;
+  width: 280px;
+  height: 30px;
+
+  &::before,
+  &::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 41%;
+    height: 1px;
+    background-color: $color-1;
+    position: relative;
+  }
+}
+
+.page-header__decorative::before {
+  margin-left: -100%;
+  left: -10px;
+}
+
+.page-header__decorative::after {
+  margin-right: -100%;
+  right: -10px;
+}
+
+.page-header__leaf {
+  display: inline-block;
+  vertical-align: middle;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: $color-2;
+  background-image: url("../img/leaf.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }

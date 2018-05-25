@@ -3,6 +3,10 @@
   background-image: url("../img/header-tablet-1.png");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: contain;
+  background-size: 320px;
   padding: 20px 0;
+}
+
+.pensions__inner {
+  @include container();
 }

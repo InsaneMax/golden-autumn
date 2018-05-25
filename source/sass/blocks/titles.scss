@@ -1,12 +1,16 @@
 .titles {
-  font-size: 30px;
-  line-height: 40px;
+  @include container();
+  font-size: 36px;
+  line-height: 1em;
   text-align: center;
   color: $color-1;
+  font-weight: normal;
   overflow: hidden;
 
   &--bg {
+    @include container();
     margin-bottom: 100px;
+    color: $color-2;
   }
 }
 
@@ -16,22 +20,43 @@
   display: inline-block;
   vertical-align: middle;
   width: 100%;
-  height: 3px;
-  background-color: red;
+  height: 1px;
+  background-color: $color-1;
   position: relative;
 }
 
 .titles::before {
   margin-left: -100%;
-  left: -14px;
+  left: -5px;
 }
 
 .titles::after {
   margin-right: -100%;
-  right: -14px;
+  right: -5px;
+}
+
+.titles--bg::before {
+  background-color: $color-2;
+}
+
+.titles--bg::after {
+  background-color: $color-2;
 }
 
 .titles__wrapper {
+  position: relative;
   display: inline-block;
   vertical-align: middle;
 }
+
+
+  // &--pensions::after {
+  //   content: "";
+  //   top: 3px;
+  //   display: block;
+  //   position: absolute;
+  //   width: 100px;
+  //   height: 100px;
+  //   background-color: red;
+  //   background-image: url("../img/promo-mobile.svg");
+  // }

@@ -48,6 +48,7 @@
     <div class="page-header__main">
       <div class="page-header__inner">
         <p class="page-header__description">Сеть пансионатов для пожилых людей</p>
+        <span class="page-header__decorative"><span class="page-header__leaf"></span></span>
         <h1 class="page-header__title">Золотая осень</h1>
         <img  class="page-header__logo" src="img/logo.svg" alt="Золотая Осень">
       </div>
@@ -73,29 +74,31 @@
     </section>
 
     <section class="pensions" id="pensions">
-      <h2 class="titles  titles--bg">
-        <span class="titles__wrapper">Пансионаты</span>
-      </h2>
-      <ul class="pensions__list  address">
-        <li class="address__item">
-          <a class="address__link"  href="#">Пенино</a>
-          <p class="address__contacts">
-            Россия, Москва<br>
-            поселение Десёновское<br>
-            д. Пенино<br>
-            ул. Московская, 6
-          </p>
-        </li>
-        <li class="address__item">
-          <a class="address__link"  href="#">Орловка</a>
-          <p class="address__contacts">
-            Россия, Москва<br>
-            Щелковский район<br>
-            д. Орловка<br>
-            ул. Новый дом, 16
-          </p>
-        </li>
-      </ul>
+      <div class="pensions__inner">
+        <h2 class="titles  titles--bg">
+          <span class="titles__wrapper  titles__wrapper--pensions">Пансионаты</span>
+        </h2>
+        <ul class="pensions__list  address">
+          <li class="address__item">
+            <a class="address__link  address__link--penino"  href="#">Пенино</a>
+            <p class="address__contacts">
+              Россия, Москва<br>
+              поселение Десёновское<br>
+              д. Пенино<br>
+              ул. Московская, 6
+            </p>
+          </li>
+          <li class="address__item">
+            <a class="address__link  address__link--orlovka"  href="#">Орловка</a>
+            <p class="address__contacts">
+              Россия, Москва<br>
+              Щелковский район<br>
+              д. Орловка<br>
+              ул. Новый дом, 16
+            </p>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="gallery" id="gallery">
@@ -125,21 +128,21 @@
           <a class="price__item  price__item--orlovka" href="#">Орловка</a>
         </div>
         <ul class="price__list">
-          <li class="price__list-item">
+          <li class="price__list-item  price__list-item--disease">
             <h3 class="price__list-title">Тяжелое состояние</h3>
             <div class="price__container">
               <span class="price__rubles">от <b class="price__numbers">1500</b><br></span>
               <span class="price__day">рублей в сутки</span>
             </div>
           </li>
-          <li class="price__list-item">
+          <li class="price__list-item  price__list-item--common">
             <h3 class="price__list-title">Обычное размещение</h3>
             <div class="price__container">
               <span class="price__rubles">от <b class="price__numbers">1000</b><br></span>
               <span class="price__day">рублей в сутки</span>
             </div>
           </li>
-          <li class="price__list-item">
+          <li class="price__list-item  price__list-item--qualified">
             <h3 class="price__list-title">Квалифицированная помощь</h3>
             <div class="price__container">
               <span class="price__rubles">от <b class="price__numbers">1200</b><br></span>
@@ -148,7 +151,7 @@
           </li>
         </ul>
 
-        <button class="price-btn  callback">Заказать звонок</button>
+        <button class="price__btn  callback">Заказать звонок</button>
 
         <p class="price__features-text">В стоимость входит:</p>
         <ul class="price__features">
@@ -295,12 +298,13 @@
     </section>
 
     <section class="contacts" id="contacts">
+      <div class="contacts__inner">
         <h2 class="titles"><span class="titles__wrapper">Контакты</span></h2>
         <p class="contacts__description">Наш пансионат это то место, где можно существенно улучшить свое здоровье! Конечно, если правильно его подобрать, зная все особенности природных лечебных факторов и медицинские возможности каждой конкретной здравницы.</p>
         <div class="contacts__inner">
           <ul class="contacts__list  address">
             <li class="address__item">
-              <h3 class="titles">Пенино</h3>
+              <a class="address__link  address__link--contacts"  href="#">Пенино</a>
               <p class="address__contacts">
                 Россия, Москва<br>
                 поселение Десёновское<br>
@@ -309,26 +313,27 @@
               </p>
             </li>
             <li class="address__item">
-              <h3 class="titles">Орловка</h3>
+              <a class="address__link  address__link--contacts"  href="#">Орловка</a>
               <p class="address__contacts">
                 Россия, Москва<br>
                 Щелковский район<br>
                 д. Орловка<br>
                 ул. Новый дом, 16
               </p>
-              <p class="contacts__tel">+7 985 787 94 13</p>
-              <p class="contacts__email">dom.penino@gmail.com</p>
             </li>
           </ul>
+          <span class="contacts__tel">+7 985 787 94 13</span>
+          <span class="contacts__email"><a href="#">dom.penino@gamil.com</a></span>
           <form class="contacts__form" action="#">
-            <label class="contacts__label" for="name">Имя</label>
+            <label class="contacts__label  visually-hidden" for="name">Имя</label>
             <input class="contacts__input" type="text" name="name" id="name" placeholder="Имя">
-            <label class="contacts__label" for="email">e-mail</label>
+            <label class="contacts__label  visually-hidden" for="email">e-mail</label>
             <input class="contacts__input" type="email" name="email" id="email" placeholder="e-mail">
-            <textarea name="contacts__field" id="contacts__field" cols="30" rows="10">Ваш текст</textarea>
-            <button class="form__submit-btn">Отправить</button>
+            <textarea class="contacts__field" name="contacts__field" id="contacts__field" cols="30" rows="10" placeholder="Ваш текст"></textarea>
+            <button class="contacts__submit-btn">Отправить</button>
           </form>
         </div>
+      </div>
     </section>
 
   </main>

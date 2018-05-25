@@ -5,6 +5,7 @@
 
 .gallery__list-wrapper {
   @include container();
+  margin-top: 45px;
   display: flex;
   justify-content: center;
 }

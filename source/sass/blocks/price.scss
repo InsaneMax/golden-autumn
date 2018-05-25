@@ -1,7 +1,7 @@
 .price {
   background-image: url("../img/leaf-bg-left.png");
   background-repeat: no-repeat;
-  background-position: left 200px;
+  background-position: left 400px;
   padding: 40px 0;
 }
 
@@ -37,7 +37,7 @@
   position: relative;
   padding: 20px;
   margin-bottom: 45px;
-  background-color: blue;
+  min-height: 210px;
   background-image: url("../img/price-bg-1.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -52,22 +52,56 @@
     top: -30px;
     width: 70px;
     height: 70px;
-    background-color: red;
     background-image: url("../img/marker-icon-1.svg");
     background-repeat: no-repeat;
     background-position: center;
     transform: translateX(-50%);
   }
+
+  &--disease {
+    &::before {
+      background-image: url("../img/marker-icon-1.svg");
+    }
+  }
+
+  &--common {
+    background-image: url("../img/price-bg-2.svg");
+
+    &::before {
+      background-image: url("../img/marker-icon-2.svg");
+    }
+  }
+
+  &--qualified {
+    background-image: url("../img/price-bg-3.svg");
+
+    &::before {
+      background-image: url("../img/marker-icon-3.svg");
+    }
+  }
 }
 
 .price__list-title {
-  padding: 5px 0;
+  padding: 7px 0;
+  margin: 40px 0 20px 0;
   border-bottom: 1px solid #ffffff;
+  font-size: 25px;
+  font-weight: normal;
+}
+
+.price__rubles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .price__numbers {
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 50px;
+  line-height: 1em;
+}
+
+.price__btn {
+  margin: 0 auto;
 }
 
 .price__features {
@@ -85,7 +119,6 @@
     left: 0;
     width: 50px;
     height: 50px;
-    background-color: tomato;
     background-image: url("../img/clock.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -141,5 +174,6 @@
 }
 
 .price__features-title {
-
+  color: $color-1;
+  font-weight: normal;
 }
