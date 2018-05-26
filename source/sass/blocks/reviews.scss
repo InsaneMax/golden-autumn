@@ -1,0 +1,10 @@
+.reviews {
+  padding: 20px 0;
+  background-color: $color-1;
+  color: #ffffff
+}
+
+.reviews__container {
+  @include container();
+  position: relative;
+}

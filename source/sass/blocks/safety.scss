@@ -1,3 +1,7 @@
 .safety {
   @include container();
 }
+
+.safety__description {
+  font-family: "Times New Roman", serif;
+}

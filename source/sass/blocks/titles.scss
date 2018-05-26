@@ -9,7 +9,7 @@
 
   &--bg {
     @include container();
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     color: $color-2;
   }
 }
@@ -49,14 +49,6 @@
   vertical-align: middle;
 }
 
-
-  // &--pensions::after {
-  //   content: "";
-  //   top: 3px;
-  //   display: block;
-  //   position: absolute;
-  //   width: 100px;
-  //   height: 100px;
-  //   background-color: red;
-  //   background-image: url("../img/promo-mobile.svg");
-  // }
+.reviews .titles--bg {
+  margin-bottom: 20px;
+}

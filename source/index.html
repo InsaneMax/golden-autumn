@@ -107,16 +107,6 @@
         <a href="#" class="gallery__item">Пенино</a>
         <a href="#" class="gallery__item  gallery__item--orlovka-icon">Орловка</a>
       </div>
-      <ul class="slider">
-        <li class="slider__item">
-          <img class="gallery__img" src="http://placehold.it/320x150" alt=""></li>
-        <li class="slider__item">
-          <img class="gallery__img" src="http://placehold.it/150x75" alt=""></li>
-        <li class="slider__item">
-          <img class="gallery__img" src="http://placehold.it/150x75" alt=""></li>
-      </ul>
-      <button class="slider__btn  slider__btn--prev">Назад</button>
-      <button class="slider__btn  slider__btn--next">Вперед</button>
     </section>
 
     <section class="price" id="price">
@@ -293,7 +283,41 @@
 
     <section class="reviews" id="reviews">
       <div class="reviews__container">
-        <h2 class="titles">Отзывы</h2>
+        <h2 class="titles  titles--bg">Отзывы</h2>
+        <div class="reviews__slider-container">
+          <ul class="reviews__slider  slider" id="slides">
+
+            <li class="slider__item  slider__item--showing">
+              <div class="slider__author">
+                <span class="slider__name">М.А. Алешкин</span>
+                <span class="slider__info">79 лет</span>
+                <img src="img/reviews-img-2.png" alt="" class="reviews__picture">
+              </div>
+              <blockquote class="slider__quote">Большое спасибо за заботу и внимание. Хорошо, что есть такие пансионаты.</blockquote>
+            </li>
+
+            <li class="slider__item">
+              <div class="slider__author">
+                <span class="slider__name">Зоя Ивановна</span>
+                <span class="slider__info">84 года</span>
+                <img src="img/reviews-img-1.png" alt="" class="reviews__picture">
+              </div>
+              <blockquote class="slider__quote">Прекрасный пансионат, дружный коллектив. Чисто и уютно.</blockquote>
+            </li>
+
+            <li class="slider__item">
+              <div class="slider__author">
+                <span class="slider__name">В.А. Иванов</span>
+                <span class="slider__info">89 лет</span>
+                <img src="img/reviews-img-3.png" alt="" class="reviews__picture">
+              </div>
+              <blockquote class="slider__quote">Люди, которые тамживут, радуются жизнии хотят жить. Низкий поклон!</blockquote>
+            </li>
+
+          </ul>
+            <button class="slider_controls  slider_controls--prev" id="previous">Назад</button>
+            <button class="slider_controls  slider_controls--next" id="next">Вперед</button>
+        </div>
       </div>
     </section>
 
@@ -325,11 +349,11 @@
           <span class="contacts__tel">+7 985 787 94 13</span>
           <span class="contacts__email"><a href="#">dom.penino@gamil.com</a></span>
           <form class="contacts__form" action="#">
-            <label class="contacts__label  visually-hidden" for="name">Имя</label>
-            <input class="contacts__input" type="text" name="name" id="name" placeholder="Имя">
+            <label class="contacts__label  visually-hidden" for="name">имя</label>
+            <input class="contacts__input" type="text" name="name" id="name" placeholder="имя">
             <label class="contacts__label  visually-hidden" for="email">e-mail</label>
             <input class="contacts__input" type="email" name="email" id="email" placeholder="e-mail">
-            <textarea class="contacts__field" name="contacts__field" id="contacts__field" cols="30" rows="10" placeholder="Ваш текст"></textarea>
+            <textarea class="contacts__field" name="contacts__field" id="contacts__field" cols="30" rows="10" placeholder="ваш текст"></textarea>
             <button class="contacts__submit-btn">Отправить</button>
           </form>
         </div>
@@ -339,21 +363,22 @@
   </main>
 
   <footer class="page-footer">
-
-    <div class="info">
-      <div class="info__container">
-        <ul class="info__list">
-          <li class="info__item">Пенино</li>
-          <li class="info__item">Орловка</li>
-        </ul>
-        <ul class="info__list">
-          <li class="info__item">+7 985 787 94 13</li>
-          <li class="info__item"><a href="#">Бронировать</a></li>
-          <li class="info__item">Связаться с нами</li>
-        </ul>
+    <div class="page-footer__inner">
+      <div class="info  info--mob">
+        <div class="info__container">
+          <ul class="info__list  info__list--mob">
+            <li class="info__item  info__item--mob">Пенино</li>
+            <li class="info__item  info__item--mob">Орловка</li>
+          </ul>
+          <ul class="info__list  info__list--mob">
+            <li class="info__item  info__item--mob-hidden">+7 985 787 94 13</li>
+            <li class="info__link"><a href="#">Бронировать</a></li>
+            <li class="info__item  info__item--mob-hidden">Связаться с нами</li>
+          </ul>
+        </div>
       </div>
     </div>
   </footer>
-
+<script src="js/main.js"></script>
 </body>
 </html>

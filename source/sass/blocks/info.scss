@@ -1,6 +1,22 @@
+.info {
+  font-family: "Arial", sans-serif;
+
+  &--header {
+    order: 2;
+  }
+}
+
+.info--mob .info__item {
+  border: none;
+}
+
 .info__list--mob-visible {
   display: flex;
   justify-content: center;
+}
+
+.info__list--mob {
+  display: flex;
 }
 
 .info__item {
@@ -26,12 +42,35 @@
   &--orlovka {
     border-right: none;
   }
+
+  &--mob-hidden {
+    display: none;
+  }
+
+  &--mob {
+    padding: 10px;
+    padding-left: 25px;
+
+    &::before {
+      width: 20px;
+      height: 20px;
+      left: 0;
+      background-image: url("../img/marker-white.svg");
+      opacity: 1;
+    }
+  }
+}
+
+.info__link {
+  padding: 10px;
 }
 
 .info__list--mob-hidden {
   display: none;
 }
 
-.info--header {
-  order: 2;
+.info--mob .info__container {
+  display: flex;
 }
+
+

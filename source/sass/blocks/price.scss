@@ -11,6 +11,7 @@
 
 .price__description {
   text-align: center;
+  font-family: "Times New Roman", serif;
 }
 
 .price__item-wrapper {
@@ -44,6 +45,7 @@
   background-size: contain;
   color: #ffffff;
   text-align: center;
+  font-family: "Times New Roman", serif;
 
   &::before {
     content: "";

@@ -1,0 +1,9 @@
+.page-footer {
+  background-color: $color-2;
+  font-size: 12px;
+  line-height: 1.2em;
+}
+
+.page-footer__inner {
+  @include container();
+}
