@@ -14,13 +14,13 @@
   font-family: "Times New Roman", serif;
 }
 
-.price__item-wrapper {
+.price__link-wrapper {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
 }
 
-.price__item {
+.price__link {
   color: $color-red;
   font-size: 22px;
   line-height: 30px;
@@ -51,7 +51,7 @@
     content: "";
     position: absolute;
     left: 50%;
-    top: -30px;
+    top: -20px;
     width: 70px;
     height: 70px;
     background-image: url("../img/marker-icon-1.svg");
@@ -113,11 +113,12 @@
 .price__features-item {
   position: relative;
   padding-left: 60px;
+  margin-bottom: 20px;
 
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -5px;
     left: 0;
     width: 50px;
     height: 50px;
@@ -171,6 +172,7 @@
   }
 
   &--reabilitation::before {
+    top: -13px;
     background-image: url("../img/reabilitation.svg");
   }
 }
@@ -178,4 +180,74 @@
 .price__features-title {
   color: $color-1;
   font-weight: normal;
+}
+
+.price__features-description {
+  margin: 0;
+  padding: 7px 0;
+}
+
+@media (min-width: $tablet-width) {
+
+  .price {
+  background-image:
+    url("../img/leaf-bg-right.png"),
+    url("../img/leaf-bg-left.png");
+  background-repeat: no-repeat;
+  background-position: right 125px, left 78px;
+}
+
+  .price__description {
+    font-size: 20px;
+    line-height: 1.2em;
+  }
+
+  .price__link-wrapper {
+    width: 445px;
+    margin: 0 auto;
+  }
+
+  .price__link {
+    font-size: 29px;
+    line-height: 1.1em;
+    padding: 10px 0;
+  }
+
+  .price__list {
+    display: flex;
+    margin-top: 50px;
+  }
+
+  .price__list-item {
+    width: 202px;
+    box-sizing: border-box;
+  }
+
+  .price__btn {
+    margin-bottom: 30px;
+  }
+
+    .price__features {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+
+  .price__features-item {
+    padding-left: 90px;
+      &::before {
+        width: 75px;
+        height: 75px;
+      }
+    }
+
+    .price__features-item--reabilitation::before {
+      top: -22px;
+    }
+
+  .price__features-text {
+    padding: 30px 0 30px 90px;
+    border-top: 1px solid $color-3;
+    font-size: 20px;
+    line-height: 1.2;
+  }
 }

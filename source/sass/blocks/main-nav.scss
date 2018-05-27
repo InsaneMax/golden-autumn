@@ -33,3 +33,21 @@
 .main-nav__link {
   color: #ffffff;
 }
+
+@media (min-width: $tablet-width) {
+
+.main-nav {
+  padding: 15px 10px;
+  background-color: #ffffff;
+  order: 3;
+  }
+
+  .main-nav__btn {
+    background-image: url("../img/burger-dark.svg");
+    background-position: center;
+  }
+
+    .main-nav__burger {
+
+    }
+}

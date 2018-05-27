@@ -46,3 +46,21 @@
   padding-left: 60px;
   font-family: "Times New Roman", serif;
 }
+
+@media (min-width: $tablet-width) {
+
+  .address {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .address__contacts {
+    font-size: 20px;
+    line-height: 1.2em;
+  }
+
+  .address__link {
+    font-size: 43px;
+    line-height: 1.1em;
+  }
+}

@@ -17,3 +17,18 @@
 .about__description {
   font-family: "Times New Roman", serif;
 }
+
+@media (min-width: $tablet-width) {
+
+  .about {
+    background-image:
+      url("../img/leaf-bg-left.png"),
+      url("../img/leaf-bg-right.png");
+    background-position: top left, top right;
+  }
+
+  .about__description, .about__welcome {
+    font-size: 20px;
+    line-height: 1.2em;
+  }
+}

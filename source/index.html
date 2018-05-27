@@ -2,6 +2,8 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Золотая осень</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -17,7 +19,7 @@
         </ul>
         <ul class="info__list  info__list--mob-hidden">
           <li class="info__item">+7 985 787 94 13</li>
-          <li class="info__item"><a href="#">Бронировать</a></li>
+          <li class="info__item"><a class="info__link-book" href="#">Бронировать</a></li>
           <li class="info__item">Связаться с нами</li>
         </ul>
       </div>
@@ -60,7 +62,11 @@
 
     <section class="about" id="about">
       <div class="about__inner">
-        <h2 class="titles"><span class="titles__wrapper">Добро<br> пожаловать!</span></h2>
+        <div class="titles">
+          <h2 class="titles__header">
+            <span class="titles__wrapper">Добро <br> пожаловать!</span>
+          </h2>
+        </div>
         <p class="about__description">Пансионаты «Бархатный сезон» основаны неравнодушными людьми, задавшимися целью создать пожилым людям комфортные условия, предоставить необходимые медицинские услуги, окружить заботой опытного персонала, предложить вкусное
         и разнообразное питание, организовать наполненную интересными событиями жизнь.
         </p>
@@ -75,9 +81,11 @@
 
     <section class="pensions" id="pensions">
       <div class="pensions__inner">
-        <h2 class="titles  titles--bg">
-          <span class="titles__wrapper  titles__wrapper--pensions">Пансионаты</span>
-        </h2>
+        <div class="titles  titles--bg">
+          <h2 class="titles__header">
+            <span class="titles__wrapper  titles__wrapper--pensions">Пансионаты</span>
+          </h2>
+        </div>
         <ul class="pensions__list  address">
           <li class="address__item">
             <a class="address__link  address__link--penino"  href="#">Пенино</a>
@@ -98,11 +106,19 @@
             </p>
           </li>
         </ul>
+        <div class="pensions__map">
+          <span class="pensions__map-marker  pensions__map-marker--penino">Пенино</span>
+          <span class="pensions__map-marker  pensions__map-marker--orlovka">Орловка</span>
+        </div>
       </div>
     </section>
 
     <section class="gallery" id="gallery">
-      <h2 class="titles"><span class="titles__wrapper">Фотогалерея</span></h2>
+        <div class="titles">
+          <h2 class="titles__header">
+            <span class="titles__wrapper">Фотогалерея</span>
+          </h2>
+        </div>
       <div class="gallery__list-wrapper">
         <a href="#" class="gallery__item">Пенино</a>
         <a href="#" class="gallery__item  gallery__item--orlovka-icon">Орловка</a>
@@ -111,11 +127,15 @@
 
     <section class="price" id="price">
       <div class="price__inner">
-        <h2 class="titles"><span class="titles__wrapper">Стоимость</span></h2>
+        <div class="titles">
+          <h2 class="titles__header">
+            <span class="titles__wrapper">Стоимость</span>
+          </h2>
+        </div>
         <p class="price__description">Выберите пансионат<br> и ознакомьтесь с ценами и условиями пребывания</p>
-        <div class="price__item-wrapper">
-          <a class="price__item" href="#">Пенино</a>
-          <a class="price__item  price__item--orlovka" href="#">Орловка</a>
+        <div class="price__link-wrapper">
+          <a class="price__link" href="#">Пенино</a>
+          <a class="price__link  price__link--orlovka" href="#">Орловка</a>
         </div>
         <ul class="price__list">
           <li class="price__list-item  price__list-item--disease">
@@ -201,7 +221,11 @@
     </section>
 
     <section class="shedule" id="shedule">
-      <h2 class="titles  titles--bg"><span class="titles__wrapper">Распорядок дня</span></h2>
+      <div class="titles  titles--bg">
+        <h2 class="titles__header">
+          <span class="titles__wrapper">Распорядок дня</span>
+        </h2>
+      </div>
       <table class="shedule__table">
         <tr>
           <td>07:30 — 08:15</td>
@@ -275,7 +299,11 @@
     </section>
 
     <section class="safety" id="safety">
-      <h2 class="titles"><span class="titles__wrapper">Безопасность</span></h2>
+      <div class="titles">
+        <h2 class="titles__header">
+          <span class="titles__wrapper">Безопасность</span>
+        </h2>
+      </div>
       <p class="safety__description">Безопасность и комфорт являются важнейшими условиями, обеспечение которых стоит в приоритете деятельности наших пансионатов.</p>
       <p class="safety__description">Для беспрепятственного передвижения постояльцев снаружи и внутри помещений имеются пандусы и поручни. </p>
       <p class="safety__description">Все помещения оборудованы противопожарными системами, медицинские работники имеют все необходимые в экстренных ситуациях приборы и медикаменты.</p>
@@ -283,7 +311,11 @@
 
     <section class="reviews" id="reviews">
       <div class="reviews__container">
-        <h2 class="titles  titles--bg">Отзывы</h2>
+      <div class="titles  titles--light-color">
+        <h2 class="titles__header">
+          <span class="titles__wrapper">Отзывы</span>
+        </h2>
+      </div>
         <div class="reviews__slider-container">
           <ul class="reviews__slider  slider" id="slides">
 
@@ -291,7 +323,7 @@
               <div class="slider__author">
                 <span class="slider__name">М.А. Алешкин</span>
                 <span class="slider__info">79 лет</span>
-                <img src="img/reviews-img-2.png" alt="" class="reviews__picture">
+                <img src="img/reviews-img-1.png" alt="" class="reviews__picture">
               </div>
               <blockquote class="slider__quote">Большое спасибо за заботу и внимание. Хорошо, что есть такие пансионаты.</blockquote>
             </li>
@@ -300,7 +332,7 @@
               <div class="slider__author">
                 <span class="slider__name">Зоя Ивановна</span>
                 <span class="slider__info">84 года</span>
-                <img src="img/reviews-img-1.png" alt="" class="reviews__picture">
+                <img src="img/reviews-img-2.png" alt="" class="reviews__picture">
               </div>
               <blockquote class="slider__quote">Прекрасный пансионат, дружный коллектив. Чисто и уютно.</blockquote>
             </li>
@@ -323,7 +355,11 @@
 
     <section class="contacts" id="contacts">
       <div class="contacts__inner">
-        <h2 class="titles"><span class="titles__wrapper">Контакты</span></h2>
+        <div class="titles">
+          <h2 class="titles__header">
+            <span class="titles__wrapper">Конакты</span>
+          </h2>
+        </div>
         <p class="contacts__description">Наш пансионат это то место, где можно существенно улучшить свое здоровье! Конечно, если правильно его подобрать, зная все особенности природных лечебных факторов и медицинские возможности каждой конкретной здравницы.</p>
         <div class="contacts__inner">
           <ul class="contacts__list  address">
@@ -372,7 +408,7 @@
           </ul>
           <ul class="info__list  info__list--mob">
             <li class="info__item  info__item--mob-hidden">+7 985 787 94 13</li>
-            <li class="info__link"><a href="#">Бронировать</a></li>
+            <li class="info__link"><a class="info__link-book" href="#">Бронировать</a></li>
             <li class="info__item  info__item--mob-hidden">Связаться с нами</li>
           </ul>
         </div>

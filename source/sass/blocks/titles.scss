@@ -1,21 +1,44 @@
 .titles {
-  @include container();
-  font-size: 36px;
-  line-height: 1em;
-  text-align: center;
+  position: relative;
   color: $color-1;
-  font-weight: normal;
-  overflow: hidden;
 
   &--bg {
-    @include container();
-    margin-bottom: 80px;
+    padding: 25px 0 75px 0;
+    margin-bottom: 25px;
+    background-image: url("../img/header-tablet-1.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 375px;
+    color: $color-2;
+  }
+
+  &--light-color {
     color: $color-2;
   }
 }
 
-.titles::before,
-.titles::after {
+.pensions .titles--bg::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+  background-image: url("../img/promo-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.titles__header {
+  @include container();
+  font-size: 36px;
+  line-height: 1em;
+  text-align: center;
+  font-weight: normal;
+  overflow: hidden;
+}
+
+.titles__header::before,
+.titles__header::after {
   content: "";
   display: inline-block;
   vertical-align: middle;
@@ -25,23 +48,33 @@
   position: relative;
 }
 
-.titles::before {
+.titles__header::before {
   margin-left: -100%;
   left: -5px;
 }
 
-.titles::after {
+.titles__header::after {
   margin-right: -100%;
   right: -5px;
 }
 
-.titles--bg::before {
+.titles--bg .titles__header::before {
   background-color: $color-2;
 }
 
-.titles--bg::after {
+.titles--bg .titles__header::after {
   background-color: $color-2;
 }
+
+.titles--light-color .titles__header::before {
+  background-color: $color-2;
+}
+
+.titles--light-color .titles__header::after {
+  background-color: $color-2;
+}
+
+
 
 .titles__wrapper {
   position: relative;
@@ -49,6 +82,38 @@
   vertical-align: middle;
 }
 
-.reviews .titles--bg {
+.reviews .titles__header--bg {
   margin-bottom: 20px;
 }
+
+ @media (min-width: $tablet-width) {
+
+  .titles {
+
+    &--bg {
+      background-size: 768px;
+      color: $color-2;
+      padding: 65px 0 165px 0;
+    }
+}
+
+  .pensions .titles--bg::after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    width: 180px;
+    height: 180px;
+    background-image: url("../img/promo-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .titles__header {
+    font-size: 43px;
+    line-height: 1.1em;
+  }
+
+  .titles__header br {
+    display: none;
+  }
+ }

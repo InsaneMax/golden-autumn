@@ -67,3 +67,39 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+ @media (min-width: $tablet-width) {
+
+  .page-header__main {
+    background-image: url("../img/bg-1.jpg");
+    background-size: cover;
+    background-position: center, top;
+    background-repeat: no-repeat;
+  }
+
+  .page-header__inner {
+    margin-bottom: 0;
+    color: #ffffff;
+    min-height: 775px;
+  }
+
+  .page-header__description {
+    width: 265px;
+    padding: 10px 0;
+    font-size: 26px;
+    line-height: 1.1em;
+    font-weight: normal;
+  }
+
+  .page-header__title {
+    padding: 15px 0;
+    font-size: 38px;
+    line-height: 1.1em;
+    font-weight: normal;
+  }
+
+  .page-header__logo {
+    width: 300px;
+  }
+
+}

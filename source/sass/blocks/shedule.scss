@@ -1,13 +1,11 @@
 .shedule {
   position: relative;
   background-color: $color-2;
-  background-image:
-    url("../img/header-tablet-1.png"),
-    url("../img/people.png");
+  background-image: url("../img/people.png");
   background-repeat: no-repeat;
-  background-position: center top, right bottom;
+  background-position: right bottom;
   background-size: 320px;
-  padding: 20px 0;
+  // padding: 20px 0;
   padding-bottom: 340px;
 
   &::after {
@@ -23,7 +21,6 @@
 .shedule__table {
   width: 100%;
   margin: 0 auto;
-  border: 1px solid;
   font-size: 16px;
   line-height: 18px;
   border-collapse: collapse;
@@ -33,6 +30,7 @@
 .shedule__table td {
   width: 60px;
   padding: 5px;
+  padding-left: 10px;
   vertical-align: top;
 }
 

@@ -40,7 +40,6 @@
 
 .slider_controls {
   position: absolute;
-  left: -3%;
   top: 49%;
   z-index: 10;
   border: none;
@@ -48,7 +47,7 @@
   margin: 10px 0px 0px 10px;
   width: 50px;
   font-size: 0;
-  background-image: url("../img/left.png");
+
   background-position: center;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -57,12 +56,17 @@
 
   &:hover {
     opacity: 0.5;
+  }
+
+  &--prev {
+    background-image: url("../img/left.png");
+    left: -3%;
 
   }
 
   &--next {
     background-image: url("../img/right.png");
-    left: 77%;
+    right: -3%;
   }
 }
 
