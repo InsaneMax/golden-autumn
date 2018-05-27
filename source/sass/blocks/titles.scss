@@ -17,6 +17,10 @@
   }
 }
 
+.shedule .titles--bg {
+    background-image: url("../img/header-tablet-2.png");
+}
+
 .pensions .titles--bg::after {
   content: "";
   position: absolute;
@@ -75,7 +79,6 @@
 }
 
 
-
 .titles__wrapper {
   position: relative;
   display: inline-block;
@@ -95,6 +98,22 @@
       color: $color-2;
       padding: 65px 0 165px 0;
     }
+}
+
+.shedule .titles--bg {
+    position: absolute;
+    top: -83px;
+    left: 50%;
+    padding: 55px 0 130px 0;
+    background-image: url("../img/header-tablet-2.png");
+    background-size: 606px;
+    transform: translateX(-50%);
+}
+
+
+
+.shedule .titles__header {
+  // width: 540px;
 }
 
   .pensions .titles--bg::after {

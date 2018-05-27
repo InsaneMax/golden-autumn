@@ -37,3 +37,34 @@
 .shedule__table-line {
   background-color: #ead087;
 }
+
+@media (min-width: $tablet-width) {
+
+  .shedule {
+  background-image:
+    url("../img/people.png"),
+    url("../img/leaf-bg-top.png");
+  background-repeat: no-repeat;
+  background-position: right bottom, right top;
+  background-size: 320px, 445px;
+  padding-top: 150px;
+  }
+
+  .shedule__table {
+    font-size: 21px;
+    line-height: 1.2em;
+  }
+
+
+  .shedule__table-line {
+    background-color: rgba(240, 191, 122, 0.5);
+  }
+
+    .shedule__table-line td {
+      padding: 20px 5px;
+  }
+
+  .shedule__table td:nth-child(1n) {
+    padding-left: 77px;
+  }
+}

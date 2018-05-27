@@ -195,6 +195,7 @@
     url("../img/leaf-bg-left.png");
   background-repeat: no-repeat;
   background-position: right 125px, left 78px;
+  padding-bottom: 115px;
 }
 
   .price__description {
@@ -219,8 +220,17 @@
   }
 
   .price__list-item {
+    min-height: 260px;
     width: 202px;
     box-sizing: border-box;
+
+    &::before {
+      top: -5px;
+    }
+  }
+
+  .price__list-title {
+    font-size: 20px;
   }
 
   .price__btn {
