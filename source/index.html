@@ -11,19 +11,19 @@
 
   <header class="page-header">
 
-    <div class="info  info--header">
-      <div class="info__container">
-        <ul class="info__list  info__list--mob-visible">
-          <li class="info__item  info__item--penino">Пенино</li>
-          <li class="info__item  info__item--orlovka">Орловка</li>
-        </ul>
-        <ul class="info__list  info__list--mob-hidden">
-          <li class="info__item">+7 985 787 94 13</li>
-          <li class="info__item"><a class="info__link-book" href="#">Бронировать</a></li>
-          <li class="info__item">Связаться с нами</li>
-        </ul>
+      <div class="info  info--header">
+        <div class="info__container">
+          <ul class="info__list  info__list--pensions">
+            <li class="info__item  info__item--marker">Пенино</li>
+            <li class="info__item  info__item--marker">Орловка</li>
+          </ul>
+          <ul class="info__list  info__list--contacts">
+            <li class="info__item  info__item--mob-hidden">+7 985 787 94 13</li>
+            <li class="info__item  info__item--border"><a class="info__link" href="#">Бронировать</a></li>
+            <li class="info__item  info__item--mob-hidden"><a class="info__link" href="#">Связаться с нами</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
 
     <nav class="main-nav">
       <div class="main-nav__burger">
@@ -311,11 +311,11 @@
 
     <section class="reviews" id="reviews">
       <div class="reviews__container">
-      <div class="titles  titles--light-color">
-        <h2 class="titles__header">
-          <span class="titles__wrapper">Отзывы</span>
-        </h2>
-      </div>
+        <div class="titles  titles--light-color">
+          <h2 class="titles__header">
+            <span class="titles__wrapper">Отзывы</span>
+          </h2>
+        </div>
         <div class="reviews__slider-container">
           <ul class="reviews__slider  slider" id="slides">
 
@@ -361,8 +361,9 @@
           </h2>
         </div>
         <p class="contacts__description">Наш пансионат это то место, где можно существенно улучшить свое здоровье! Конечно, если правильно его подобрать, зная все особенности природных лечебных факторов и медицинские возможности каждой конкретной здравницы.</p>
-        <div class="contacts__inner">
-          <ul class="contacts__list  address">
+        <div class="contacts__inner  contacts__inner--footer">
+        <div class="contacts__address-wrap">
+          <ul class="contacts__list  address  address--footer">
             <li class="address__item">
               <a class="address__link  address__link--contacts"  href="#">Пенино</a>
               <p class="address__contacts">
@@ -384,6 +385,7 @@
           </ul>
           <span class="contacts__tel">+7 985 787 94 13</span>
           <span class="contacts__email"><a href="#">dom.penino@gamil.com</a></span>
+        </div>
           <form class="contacts__form" action="#">
             <label class="contacts__label  visually-hidden" for="name">имя</label>
             <input class="contacts__input" type="text" name="name" id="name" placeholder="имя">
@@ -400,19 +402,21 @@
 
   <footer class="page-footer">
     <div class="page-footer__inner">
-      <div class="info  info--mob">
+
+      <div class="info  info--footer">
         <div class="info__container">
-          <ul class="info__list  info__list--mob">
-            <li class="info__item  info__item--mob">Пенино</li>
-            <li class="info__item  info__item--mob">Орловка</li>
+          <ul class="info__list  info__list--pensions">
+            <li class="info__item  info__item--marker">Пенино</li>
+            <li class="info__item  info__item--marker">Орловка</li>
           </ul>
-          <ul class="info__list  info__list--mob">
+          <ul class="info__list  info__list--contacts">
             <li class="info__item  info__item--mob-hidden">+7 985 787 94 13</li>
-            <li class="info__link"><a class="info__link-book" href="#">Бронировать</a></li>
-            <li class="info__item  info__item--mob-hidden">Связаться с нами</li>
+            <li class="info__item  info__item--border"><a class="info__link" href="#">Бронировать</a></li>
+            <li class="info__item  info__item--mob-hidden"><a class="info__link" href="#">Связаться с нами</a></li>
           </ul>
         </div>
       </div>
+
     </div>
   </footer>
 <script src="js/main.js"></script>

@@ -52,6 +52,10 @@
   .address {
     display: flex;
     justify-content: space-between;
+
+    &--footer {
+      flex-direction: column;
+    }
   }
 
   .address__contacts {
