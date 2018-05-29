@@ -1,27 +1,84 @@
 .main-nav {
   color: #ffffff;
-  padding: 15px 0;
+  // padding: 15px 0;
   background-color: $color-3;
   order: 1;
 }
 
 .main-nav__burger {
   @include container();
+  position: relative;
   display: flex;
   justify-content: space-between;
+  padding: 10px 0;
+}
+
+.main-nav__list-wrapper {
+  @include container();
 }
 
 .main-nav__btn {
-  font-size: 0;
   width: 36px;
   height: 36px;
   border: none;
   background-color: transparent;
-  background-image: url("../img/burger.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  outline: none;
 }
+
+
+.main-nav--closed .main-nav__btn::before {
+  content: "";
+
+  position: absolute;
+  top: 15px;
+  left: 17px;
+
+  width: 36px;
+  height: 2px;
+
+  background-color: #ffffff;
+  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff, 0 24px 0 0 #ffffff;
+}
+
+.main-nav--closed .main-nav__btn:active::before {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3), 0 16px 0 0 rgba(255, 255, 255, 0.3);
+}
+
+.main-nav--opened .main-nav__btn {
+  top: 0;
+  right: auto;
+  left: 0;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 24px;
+    left: 18px;
+
+    width: 36px;
+    height: 2px;
+
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
 
 .main-nav__booking {
   display: flex;
@@ -33,6 +90,22 @@
 
 .main-nav__link {
   color: #ffffff;
+}
+
+@media (max-width: $burger-only) {
+
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
+
+  .main-nav--no-js .main-nav__btn {
+    display: none;
+  }
+
+   .main-nav--no-js .main-nav__list {
+    display: block;
+   }
+
 }
 
 @media (min-width: $tablet-width) {

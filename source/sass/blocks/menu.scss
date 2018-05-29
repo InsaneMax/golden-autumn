@@ -1,5 +1,18 @@
 .menu {
-  display: none;
+  display: block;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.menu__item {
+  border-bottom: 1px solid #f7e7d7;
+}
+
+.menu__item a {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: $color-1;
 }
 
 @media (min-width: $desktop-width) {
