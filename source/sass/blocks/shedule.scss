@@ -5,17 +5,7 @@
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 320px;
-  // padding: 20px 0;
   padding-bottom: 340px;
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 33px;
-    background-color: #ead087;
-  }
 }
 
 .shedule__table {
@@ -59,11 +49,59 @@
     background-color: rgba(240, 191, 122, 0.5);
   }
 
-    .shedule__table-line td {
-      padding: 20px 5px;
+
+  .shedule__table td:nth-child(2n + 1) {
+    width: 30%;
+    text-align: right;
+    padding: 5px 20px;
   }
 
-  .shedule__table td:nth-child(1n) {
-    padding-left: 77px;
+  .shedule .shedule__table-line td {
+      padding: 20px 10px;
   }
+
+  .shedule__table-line td:nth-child(2n + 1) {
+    padding: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .shedule {
+    position: relative;
+    padding-bottom: 100px;
+    background-image: url();
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 450px;
+        height: 500px;
+        // background-color: blue;
+        background-image: url(../img/people.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom right;
+      }
+  }
+
+  .shedule__table td {
+    width: 50%;
+  }
+    .shedule .shedule__table-line td {
+      padding: 22px 10px;
+  }
+
+  .shedule__table td:nth-child(2n + 1) {
+    width: 32%;
+    padding: 5px 22px;
+    text-align: right;
+  }
+
+  .shedule__table-line td:nth-child(2n + 1) {
+    padding: 22px;
+  }
+
 }

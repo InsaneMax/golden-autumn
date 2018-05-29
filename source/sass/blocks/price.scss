@@ -190,12 +190,16 @@
 @media (min-width: $tablet-width) {
 
   .price {
-  background-image:
-    url("../img/leaf-bg-right.png"),
-    url("../img/leaf-bg-left.png");
-  background-repeat: no-repeat;
-  background-position: right 125px, left 78px;
-  padding-bottom: 115px;
+    background-image:
+      url("../img/leaf-bg-right.png"),
+      url("../img/leaf-bg-left.png");
+    background-repeat: no-repeat;
+    background-position: right 125px, left 78px;
+    padding-bottom: 115px;
+}
+
+.price__inner {
+  @include container();
 }
 
   .price__description {
@@ -216,16 +220,32 @@
 
   .price__list {
     display: flex;
+    justify-content: center;
     margin-top: 50px;
   }
 
   .price__list-item {
-    min-height: 260px;
+    min-height: 280px;
     width: 202px;
     box-sizing: border-box;
+    background-image: url("../img/price-bg-1-tabl.svg");
+
+      &--disease {
+        background-image: url("../img/price-bg-1-tabl.svg");
+      }
+
+      &--common {
+        background-image: url("../img/price-bg-2-tabl.svg");
+      }
+
+      &--qualified {
+        background-image: url("../img/price-bg-3-tabl.svg");
+        word-break: keep-all;
+        hyphens: auto;
+      }
 
     &::before {
-      top: -5px;
+      top: -30px;
     }
   }
 

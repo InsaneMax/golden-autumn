@@ -24,7 +24,7 @@
 .pensions .titles--bg::after {
   content: "";
   position: absolute;
-  right: 20px;
+  right: 10px;
   width: 100px;
   height: 100px;
   background-image: url("../img/promo-mobile.svg");
@@ -136,3 +136,22 @@
     display: none;
   }
  }
+
+  @media (min-width: $desktop-width) {
+
+    .titles--bg {
+      background-size: 747px;
+    }
+
+    .pensions .titles--bg::after {
+      top: 95px;
+      right: 15%;
+    }
+  }
+
+  @media (min-width: $desktop-lg) {
+
+    .pensions .titles--bg::after {
+      right: 30%;
+    }
+  }

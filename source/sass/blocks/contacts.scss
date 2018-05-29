@@ -69,11 +69,27 @@
 .contacts__input {
   padding: 8px 15px;
   margin-bottom: 10px;
+  border: 1px solid #bab7b4;
+  outline: none;
+
+  &:focus {
+    border: 1px solid #847567;
+    color: #412603;
+  }
 }
 
 .contacts__field {
   padding: 10px 15px;
   margin-bottom: 10px;
+  border: 1px solid #bab7b4;
+  outline: none;
+
+
+  &:focus {
+    border: 1px solid #847567;
+    color: #412603;
+  }
+
 }
 
 .contacts__submit-btn {
@@ -85,8 +101,13 @@
   border-radius: 5px;
   box-sizing: border-box;
   box-shadow: inset 0 0 10px #74563e;
+  transition: 500ms;
 
   &:hover {
+    background-color: #965112 ;
+  }
+
+  &:active {
     opacity: 0.8;
   }
 }

@@ -13,6 +13,7 @@
   background-image: linear-gradient( #f4f5f5, #d1d1d3);
   color: #5a4e4e;
   outline: none;
+  transition: 400ms;
 
   &::before {
     content: "";

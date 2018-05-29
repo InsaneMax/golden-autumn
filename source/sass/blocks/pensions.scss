@@ -37,6 +37,7 @@
     background-image: url("../img/map.png");
     background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
     z-index: 5;
   }
 
@@ -82,4 +83,23 @@
       }
     }
   }
+}
+
+@media (min-width: $desktop-width) {
+
+  .pensions__map {
+    width: 765px;
+    height: 727px;
+    margin-top: -40px;
+  }
+
+    .pensions__map-marker--penino {
+      top: 345px;
+      left: 215px;
+    }
+
+    .pensions__map-marker--orlovka {
+      top: 215px;
+      left: 420px;
+    }
 }

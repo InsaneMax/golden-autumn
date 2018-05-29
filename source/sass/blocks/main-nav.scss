@@ -52,3 +52,14 @@
 
     }
 }
+
+@media (min-width: $desktop-width) {
+
+      .main-nav {
+        padding: 0;
+      }
+
+      .main-nav__burger {
+      display: none;
+    }
+}

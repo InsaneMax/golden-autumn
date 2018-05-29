@@ -4,6 +4,7 @@
   line-height: 1.2em;
 
   &--header {
+    background-color: #ffffff;
     order: 2;
   }
 }
@@ -17,13 +18,13 @@
   justify-content: space-between;
   align-items: center;
   min-height: 40px;
-  background: red;
 }
 
 .info__list {
   display: flex;
   flex-wrap: wrap;
   width: 360px;
+
 
   &--contacts {
     justify-content: flex-end;
@@ -48,12 +49,14 @@
   padding: 5px 20px 5px 40px;
   font-size: 18px;
   line-height: 1.2em;
+  color: $color-4;
 
   &:nth-child(1) {
-    border-right: 1px solid #ffffff;
+    border-right: 1px solid $color-4;
   }
 
   &::before {
+    background-image: url("../img/marker-brown.svg");
     top: 15px;
     left: 15px;
   }
@@ -87,6 +90,17 @@
   }
 }
 
+.info--footer .info__list {
+  width: 150px;
+  box-sizing: border-box;
+  flex-wrap: nowrap;
+}
+
+.info--footer .info__item--marker {
+  padding: 5px;
+  padding-left: 25px;
+}
+
 .info__link {
   text-decoration: none;
   color: #ffffff;
@@ -94,6 +108,10 @@
 
 
 @media (min-width: $tablet-width) {
+
+  .info--header {
+    background-color: $color-4;
+  }
 
   .info__container {
     display: flex;
@@ -117,24 +135,29 @@
 }
 
 .info--header .info__list--contacts {
+    width: 360px;
   display: flex;
+  box-sizing: border-box;
 }
 
 .info--header .info__list--pensions {
   width: 360px;
   justify-content: flex-start;
+  box-sizing: border-box;
 }
 
 .info--header .info__item {
   padding: 5px;
   font-size: 14px;
   line-height: 1.2em;
+  color: #ffffff;
 
   &:nth-child(1) {
     border-right: none;
   }
 
   &::before {
+    background-image: url("../img/marker-white.svg");
     top: 0px;
     left: 15px;
   }
@@ -147,6 +170,26 @@
       left: 0;
     }
   }
+}
+
+.info--footer .info__list {
+  width: 360px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.info--footer .info__item--marker {
+  padding: 5px;
+  padding-left: 25px;
+}
+
+.info__link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.info__list--pensions {
+  padding-left: 75px;
 }
 
   .info__item {
@@ -179,5 +222,17 @@
     &--mob-hidden {
       display: block;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .info__container {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+    .info__list--pensions {
+    padding-left: 0;
   }
 }
