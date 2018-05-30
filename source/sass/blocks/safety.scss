@@ -1,15 +1,16 @@
 .safety {
   @include container();
+  padding: 30px 0;
 }
 
 .safety__description {
   font-family: "Times New Roman", serif;
 }
 
- @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
 
-    .safety__description {
-       font-size: 21px;
-       line-height: 1.2em;
+  .safety__description {
+    font-size: 21px;
+    line-height: 1.2em;
   }
- }
+}

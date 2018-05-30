@@ -18,7 +18,7 @@
 }
 
 .shedule .titles--bg {
-    background-image: url("../img/header-tablet-2.png");
+  background-image: url("../img/header-tablet-2.png");
 }
 
 .pensions .titles--bg::after {
@@ -78,7 +78,6 @@
   background-color: $color-2;
 }
 
-
 .titles__wrapper {
   position: relative;
   display: inline-block;
@@ -90,17 +89,19 @@
 }
 
  @media (min-width: $tablet-width) {
-
   .titles {
-
-    &--bg {
-      background-size: 768px;
-      color: $color-2;
-      padding: 65px 0 165px 0;
-    }
+      &--bg {
+        background-size: 768px;
+        color: $color-2;
+        padding: 65px 0 165px 0;
+      }
 }
 
-.shedule .titles--bg {
+  .titles--reviews {
+    margin-bottom: 50px;
+  }
+
+  .shedule .titles--bg {
     position: absolute;
     top: -83px;
     left: 50%;
@@ -108,13 +109,7 @@
     background-image: url("../img/header-tablet-2.png");
     background-size: 606px;
     transform: translateX(-50%);
-}
-
-
-
-.shedule .titles__header {
-  // width: 540px;
-}
+  }
 
   .pensions .titles--bg::after {
     content: "";
@@ -135,23 +130,23 @@
   .titles__header br {
     display: none;
   }
- }
+}
 
-  @media (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
 
-    .titles--bg {
-      background-size: 747px;
-    }
-
-    .pensions .titles--bg::after {
-      top: 95px;
-      right: 15%;
-    }
+  .titles--bg {
+    background-size: 747px;
   }
 
-  @media (min-width: $desktop-lg) {
-
-    .pensions .titles--bg::after {
-      right: 30%;
-    }
+  .pensions .titles--bg::after {
+    top: 95px;
+    right: 15%;
   }
+}
+
+@media (min-width: $desktop-lg) {
+
+  .pensions .titles--bg::after {
+    right: 30%;
+  }
+}

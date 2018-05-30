@@ -94,16 +94,26 @@
   font-family: "Times New Roman", serif;
 }
 
- @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
 
   .slider__name, .slider__info {
     font-size: 21px;
     line-height: 1.2em;
-   }
+  }
 
   .slider__quote {
     font-size: 21px;
     line-height: 1.2em;
-   }
+    color: #000000;
+  }
+
+  .slider__item {
+    color: #ffffff;
+    background-color: $color-6;
+  }
+
+  .slider__author {
+    padding: 20px 0;
+  }
 
 }

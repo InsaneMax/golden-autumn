@@ -1,6 +1,6 @@
-.contacts {
-  padding: 20px 0;
-
+  .contacts {
+    position: relative;
+    padding: 20px 0;
 }
 
 .contacts__inner {
@@ -58,6 +58,10 @@
   font-size: 16px;
   line-height: 1.2em;
   color: #000000;
+
+  &:hover {
+    border-bottom: 1px solid #000;
+  }
 }
 
 .contacts__form {
@@ -112,7 +116,7 @@
   }
 }
 
- @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
 
   .contacts__inner--footer {
     display: flex;
@@ -141,4 +145,4 @@
     padding: 8px 18px;
     font-size: 18px;
   }
- }
+}

@@ -1,7 +1,11 @@
 .reviews {
   padding: 20px 0;
-  background-color: $color-1;
+  background-color: $color-6;
   color: #ffffff
+}
+
+.reviews--md {
+  display: none;
 }
 
 .reviews__container {
@@ -9,7 +13,13 @@
   position: relative;
 }
 
- @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
 
+  .reviews--sm {
+    display: none;
+  }
 
- }
+  .reviews--md {
+    display: block;
+  }
+}

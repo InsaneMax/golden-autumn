@@ -6,24 +6,25 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Золотая осень</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="swiper.min.css">
 </head>
 <body>
 
   <header class="page-header">
 
-      <div class="info  info--header">
-        <div class="info__container">
-          <ul class="info__list  info__list--pensions">
-            <li class="info__item  info__item--marker">Пенино</li>
-            <li class="info__item  info__item--marker">Орловка</li>
-          </ul>
-          <ul class="info__list  info__list--contacts">
-            <li class="info__item  info__item--mob-hidden">+7 985 787 94 13</li>
-            <li class="info__item  info__item--border"><a class="info__link" href="#">Бронировать</a></li>
-            <li class="info__item  info__item--mob-hidden"><a class="info__link" href="#">Связаться с нами</a></li>
-          </ul>
-        </div>
+    <div class="info  info--header">
+      <div class="info__container">
+        <ul class="info__list  info__list--pensions">
+          <li class="info__item  info__item--marker">Пенино</li>
+          <li class="info__item  info__item--marker">Орловка</li>
+        </ul>
+        <ul class="info__list  info__list--contacts">
+          <li class="info__item  info__item--mob-hidden">+7 985 787 94 13</li>
+          <li class="info__item  info__item--border"><a class="info__link" href="#">Бронировать</a></li>
+          <li class="info__item  info__item--mob-hidden"><a class="info__link" href="#">Связаться с нами</a></li>
+        </ul>
       </div>
+    </div>
 
     <nav class="main-nav  main-nav--closed  main-nav--no-js">
 
@@ -67,18 +68,20 @@
 
     <section class="about" id="about">
       <div class="about__inner">
+
         <div class="titles">
           <h2 class="titles__header">
             <span class="titles__wrapper">Добро <br> пожаловать!</span>
           </h2>
         </div>
+
         <p class="about__description">Пансионаты «Бархатный сезон» основаны неравнодушными людьми, задавшимися целью создать пожилым людям комфортные условия, предоставить необходимые медицинские услуги, окружить заботой опытного персонала, предложить вкусное
-        и разнообразное питание, организовать наполненную интересными событиями жизнь.
+          и разнообразное питание, организовать наполненную интересными событиями жизнь.
         </p>
         <p class="about__description">Красивые небольшие здания с безбарьерной средой, уютными комнатами, просторными холлами для общения расположены в экологически благоприятных районах Подмосковья</p>
         <p class="about__description">Квалифицированные сотрудники осуществляют круглосуточный уход и медицинскую помощь, создают доброжелательную обстановку, помогают постояльцам чувствовать себя как дома.</p>
         <p class="about__description">Мы приглашаем приехать и посмотреть наши пансионаты, познакомиться
-        с сотрудниками и условиями пребывания, чтобы, отбросив сомнения выбрать один
+          с сотрудниками и условиями пребывания, чтобы, отбросив сомнения выбрать один
         из наших пансионатов для себя или своих близких.</p>
         <span class="about__welcome">Добро пожаловать!</span>
       </div>
@@ -86,11 +89,13 @@
 
     <section class="pensions" id="pensions">
       <div class="pensions__inner">
-        <div class="titles  titles--bg">
+
+        <div class="titles  titles--bg  decorative-leaf">
           <h2 class="titles__header">
             <span class="titles__wrapper  titles__wrapper--pensions">Пансионаты</span>
           </h2>
         </div>
+
         <ul class="pensions__list  address">
           <li class="address__item">
             <a class="address__link  address__link--penino"  href="#">Пенино</a>
@@ -111,38 +116,68 @@
             </p>
           </li>
         </ul>
+
         <div class="pensions__map">
           <span class="pensions__map-marker  pensions__map-marker--penino">Пенино</span>
           <span class="pensions__map-marker  pensions__map-marker--orlovka">Орловка</span>
         </div>
+
       </div>
     </section>
 
     <section class="gallery" id="gallery">
-        <div class="titles">
-          <h2 class="titles__header">
-            <span class="titles__wrapper">Фотогалерея</span>
-          </h2>
-        </div>
+
+      <div class="titles">
+        <h2 class="titles__header">
+          <span class="titles__wrapper">Фотогалерея</span>
+        </h2>
+      </div>
+
       <div class="gallery__list-wrapper">
         <a href="#" class="gallery__item">Пенино</a>
         <a href="#" class="gallery__item  gallery__item--orlovka-icon">Орловка</a>
       </div>
     </section>
 
+
+
+    <!-- Swiper -->
+    <div class="swiper-container gallery-top">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image:url(img/slider-big-img.jpg)"></div>
+        <div class="swiper-slide" style="background-image:url(img/slider-big-img.jpg)"></div>
+        <div class="swiper-slide" style="background-image:url(img/slider-big-img.jpg)"></div>
+        <div class="swiper-slide" style="background-image:url(img/slider-big-img.jpg)"></div>
+      </div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next swiper-button-white"></div>
+      <div class="swiper-button-prev swiper-button-white"></div>
+    </div>
+    <div class="swiper-container gallery-thumbs">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image:url(img/slider-big-img.jpg)"></div>
+        <div class="swiper-slide" style="background-image:url(img/slider-big-img.jpg)"></div>
+        <div class="swiper-slide" style="background-image:url(img/slider-big-img.jpg)"></div>
+        <div class="swiper-slide" style="background-image:url(img/slider-big-img.jpg)"></div>
+      </div>
+    </div>
+
     <section class="price" id="price">
       <div class="price__inner">
+
         <div class="titles">
           <h2 class="titles__header">
             <span class="titles__wrapper">Стоимость</span>
           </h2>
         </div>
+
         <p class="price__description">Выберите пансионат<br> и ознакомьтесь с ценами и условиями пребывания</p>
         <div class="price__link-wrapper">
           <a class="price__link" href="#">Пенино</a>
           <a class="price__link  price__link--orlovka" href="#">Орловка</a>
         </div>
         <ul class="price__list">
+
           <li class="price__list-item  price__list-item--disease">
             <h3 class="price__list-title">Тяжелое состояние</h3>
             <div class="price__container">
@@ -150,6 +185,7 @@
               <span class="price__day">рублей в сутки</span>
             </div>
           </li>
+
           <li class="price__list-item  price__list-item--common">
             <h3 class="price__list-title">Обычное размещение</h3>
             <div class="price__container">
@@ -157,6 +193,7 @@
               <span class="price__day">рублей в сутки</span>
             </div>
           </li>
+
           <li class="price__list-item  price__list-item--qualified">
             <h3 class="price__list-title">Квалифицированная помощь</h3>
             <div class="price__container">
@@ -164,6 +201,7 @@
               <span class="price__day">рублей в сутки</span>
             </div>
           </li>
+
         </ul>
 
         <button class="price__btn  callback">Заказать звонок</button>
@@ -225,12 +263,14 @@
       </div>
     </section>
 
-    <section class="shedule" id="shedule">
+    <section class="shedule  decorative-leaf  decorative-leaf--shedule" id="shedule">
+
       <div class="titles  titles--bg">
         <h2 class="titles__header">
           <span class="titles__wrapper">Распорядок дня</span>
         </h2>
       </div>
+
       <table class="shedule__table">
         <tr>
           <td>07:30 — 08:15</td>
@@ -303,24 +343,28 @@
       </table>
     </section>
 
-    <section class="safety" id="safety">
+    <section class="safety  decorative-leaf" id="safety">
+
       <div class="titles">
         <h2 class="titles__header">
           <span class="titles__wrapper">Безопасность</span>
         </h2>
       </div>
+
       <p class="safety__description">Безопасность и комфорт являются важнейшими условиями, обеспечение которых стоит в приоритете деятельности наших пансионатов.</p>
       <p class="safety__description">Для беспрепятственного передвижения постояльцев снаружи и внутри помещений имеются пандусы и поручни. </p>
       <p class="safety__description">Все помещения оборудованы противопожарными системами, медицинские работники имеют все необходимые в экстренных ситуациях приборы и медикаменты.</p>
     </section>
 
-    <section class="reviews" id="reviews">
+    <section class="reviews  reviews--sm" id="reviews">
       <div class="reviews__container">
+
         <div class="titles  titles--light-color">
           <h2 class="titles__header">
             <span class="titles__wrapper">Отзывы</span>
           </h2>
         </div>
+
         <div class="reviews__slider-container">
           <ul class="reviews__slider  slider" id="slides">
 
@@ -352,45 +396,130 @@
             </li>
 
           </ul>
-            <button class="slider_controls  slider_controls--prev" id="previous">Назад</button>
-            <button class="slider_controls  slider_controls--next" id="next">Вперед</button>
+          <button class="slider_controls  slider_controls--prev" id="previous">Назад</button>
+          <button class="slider_controls  slider_controls--next" id="next">Вперед</button>
         </div>
       </div>
     </section>
 
-    <section class="contacts" id="contacts">
+    <div class="reviews reviews--md">
+
+      <div class="titles  titles--light-color  titles--reviews">
+        <h2 class="titles__header">
+          <span class="titles__wrapper">Отзывы</span>
+        </h2>
+      </div>
+
+      <div class="swiper-container swiper-container--reviews">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="slider__item  slider__item--showing">
+              <div class="slider__author">
+                <span class="slider__name">М.А. Алешкин</span>
+                <span class="slider__info">79 лет</span>
+                <img src="img/reviews-img-1.png" alt="" class="reviews__picture">
+              </div>
+              <blockquote class="slider__quote">Большое спасибо за заботу и внимание. Хорошо, что есть такие пансионаты.</blockquote>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slider__item   slider__item--showing">
+              <div class="slider__author">
+                <span class="slider__name">Зоя Ивановна</span>
+                <span class="slider__info">84 года</span>
+                <img src="img/reviews-img-2.png" alt="" class="reviews__picture">
+              </div>
+              <blockquote class="slider__quote">Прекрасный пансионат, дружный коллектив. Чисто и уютно.</blockquote>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slider__item  slider__item--showing">
+              <div class="slider__author">
+                <span class="slider__name">В.А. Иванов</span>
+                <span class="slider__info">89 лет</span>
+                <img src="img/reviews-img-3.png" alt="" class="reviews__picture">
+              </div>
+              <blockquote class="slider__quote">Люди, которые тамживут, радуются жизнии хотят жить. Низкий поклон!</blockquote>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slider__item  slider__item--showing">
+              <div class="slider__author">
+                <span class="slider__name">М.А. Алешкин</span>
+                <span class="slider__info">79 лет</span>
+                <img src="img/reviews-img-1.png" alt="" class="reviews__picture">
+              </div>
+              <blockquote class="slider__quote">Большое спасибо за заботу и внимание. Хорошо, что есть такие пансионаты.</blockquote>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slider__item   slider__item--showing">
+              <div class="slider__author">
+                <span class="slider__name">Зоя Ивановна</span>
+                <span class="slider__info">84 года</span>
+                <img src="img/reviews-img-2.png" alt="" class="reviews__picture">
+              </div>
+              <blockquote class="slider__quote">Прекрасный пансионат, дружный коллектив. Чисто и уютно.</blockquote>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slider__item  slider__item--showing">
+              <div class="slider__author">
+                <span class="slider__name">М.А. Алешкин</span>
+                <span class="slider__info">79 лет</span>
+                <img src="img/reviews-img-1.png" alt="" class="reviews__picture">
+              </div>
+              <blockquote class="slider__quote">Большое спасибо за заботу и внимание. Хорошо, что есть такие пансионаты.</blockquote>
+            </div>
+          </div>
+
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <section class="contacts  decorative-leaf" id="contacts">
       <div class="contacts__inner">
+
         <div class="titles">
           <h2 class="titles__header">
             <span class="titles__wrapper">Конакты</span>
           </h2>
         </div>
+
         <p class="contacts__description">Наш пансионат это то место, где можно существенно улучшить свое здоровье! Конечно, если правильно его подобрать, зная все особенности природных лечебных факторов и медицинские возможности каждой конкретной здравницы.</p>
         <div class="contacts__inner  contacts__inner--footer">
-        <div class="contacts__address-wrap">
-          <ul class="contacts__list  address  address--footer">
-            <li class="address__item">
-              <a class="address__link  address__link--contacts"  href="#">Пенино</a>
-              <p class="address__contacts">
-                Россия, Москва<br>
-                поселение Десёновское<br>
-                д. Пенино<br>
-                ул. Московская, 6
-              </p>
-            </li>
-            <li class="address__item">
-              <a class="address__link  address__link--contacts"  href="#">Орловка</a>
-              <p class="address__contacts">
-                Россия, Москва<br>
-                Щелковский район<br>
-                д. Орловка<br>
-                ул. Новый дом, 16
-              </p>
-            </li>
-          </ul>
-          <span class="contacts__tel">+7 985 787 94 13</span>
-          <span class="contacts__email"><a href="#">dom.penino@gamil.com</a></span>
-        </div>
+          <div class="contacts__address-wrap">
+            <ul class="contacts__list  address  address--footer">
+              <li class="address__item">
+                <a class="address__link  address__link--contacts"  href="#">Пенино</a>
+                <p class="address__contacts">
+                  Россия, Москва<br>
+                  поселение Десёновское<br>
+                  д. Пенино<br>
+                  ул. Московская, 6
+                </p>
+              </li>
+              <li class="address__item">
+                <a class="address__link  address__link--contacts"  href="#">Орловка</a>
+                <p class="address__contacts">
+                  Россия, Москва<br>
+                  Щелковский район<br>
+                  д. Орловка<br>
+                  ул. Новый дом, 16
+                </p>
+              </li>
+            </ul>
+            <span class="contacts__tel">+7 985 787 94 13</span>
+            <span class="contacts__email"><a href="mailto:dom.penino@gamil.com">dom.penino@gamil.com</a></span>
+          </div>
           <form class="contacts__form" action="#">
             <label class="contacts__label  visually-hidden" for="name">имя</label>
             <input class="contacts__input" type="text" name="name" id="name" placeholder="имя">
@@ -424,7 +553,44 @@
 
     </div>
   </footer>
-<script src="js/main.js"></script>
-<script src="js/navigation.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var galleryTop = new Swiper('.gallery-top', {
+      spaceBetween: 10,
+      loop:true,
+      loopedSlides: 5, //looped slides should be the same
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      touchRatio: 0.2,
+      loop: true,
+      loopedSlides: 5, //looped slides should be the same
+      slideToClickedSlide: true,
+    });
+    galleryTop.controller.control = galleryThumbs;
+    galleryThumbs.controller.control = galleryTop;
+
+  </script>
+
+  <script>
+    var swiper = new Swiper('.swiper-container--reviews', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+
 </body>
 </html>

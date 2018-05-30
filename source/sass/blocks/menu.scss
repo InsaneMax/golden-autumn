@@ -6,6 +6,10 @@
 
 .menu__item {
   border-bottom: 1px solid #f7e7d7;
+
+  &:hover {
+    background-color: #f6f3ee;
+  }
 }
 
 .menu__item a {
@@ -13,6 +17,15 @@
   padding: 10px 15px;
   text-decoration: none;
   color: $color-1;
+}
+
+@media (min-width: $tablet-width) {
+
+  .menu__item {
+      &:first-child {
+        border-top: 1px solid #f7e7d7;
+      }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -26,8 +39,11 @@
   }
 
   .menu__item {
-    padding: 5px 10px;
     margin: 5px 0;
+    border-bottom: none;
+      &:first-child {
+        border-top: none;
+      }
   }
 
   .menu__item a {

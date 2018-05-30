@@ -30,10 +30,6 @@
   }
 }
 
-.price__list {
-
-}
-
 .price__list-item {
   position: relative;
   padding: 20px;
@@ -104,10 +100,6 @@
 
 .price__btn {
   margin: 0 auto;
-}
-
-.price__features {
-
 }
 
 .price__features-item {
@@ -191,16 +183,16 @@
 
   .price {
     background-image:
-      url("../img/leaf-bg-right.png"),
-      url("../img/leaf-bg-left.png");
+    url("../img/leaf-bg-right.png"),
+    url("../img/leaf-bg-left.png");
     background-repeat: no-repeat;
     background-position: right 125px, left 78px;
     padding-bottom: 115px;
-}
+  }
 
-.price__inner {
-  @include container();
-}
+  .price__inner {
+    @include container();
+  }
 
   .price__description {
     font-size: 20px;
@@ -230,19 +222,19 @@
     box-sizing: border-box;
     background-image: url("../img/price-bg-1-tabl.svg");
 
-      &--disease {
-        background-image: url("../img/price-bg-1-tabl.svg");
-      }
+    &--disease {
+      background-image: url("../img/price-bg-1-tabl.svg");
+    }
 
-      &--common {
-        background-image: url("../img/price-bg-2-tabl.svg");
-      }
+    &--common {
+      background-image: url("../img/price-bg-2-tabl.svg");
+    }
 
-      &--qualified {
-        background-image: url("../img/price-bg-3-tabl.svg");
-        word-break: keep-all;
-        hyphens: auto;
-      }
+    &--qualified {
+      background-image: url("../img/price-bg-3-tabl.svg");
+      word-break: keep-all;
+      hyphens: auto;
+    }
 
     &::before {
       top: -30px;
@@ -257,22 +249,22 @@
     margin-bottom: 30px;
   }
 
-    .price__features {
-      font-size: 20px;
-      line-height: 1.2;
-    }
+  .price__features {
+    font-size: 20px;
+    line-height: 1.2;
+  }
 
   .price__features-item {
     padding-left: 90px;
-      &::before {
-        width: 75px;
-        height: 75px;
-      }
+    &::before {
+      width: 75px;
+      height: 75px;
     }
+  }
 
-    .price__features-item--reabilitation::before {
-      top: -22px;
-    }
+  .price__features-item--reabilitation::before {
+    top: -22px;
+  }
 
   .price__features-text {
     padding: 30px 0 30px 90px;
