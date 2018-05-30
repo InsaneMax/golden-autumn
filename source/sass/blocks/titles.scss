@@ -88,14 +88,14 @@
   margin-bottom: 20px;
 }
 
- @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .titles {
-      &--bg {
-        background-size: 768px;
-        color: $color-2;
-        padding: 65px 0 165px 0;
-      }
-}
+    &--bg {
+      background-size: 768px;
+      color: $color-2;
+      padding: 65px 0 165px 0;
+    }
+  }
 
   .titles--reviews {
     margin-bottom: 50px;
@@ -133,7 +133,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .titles--bg {
     background-size: 747px;
   }
@@ -145,7 +144,6 @@
 }
 
 @media (min-width: $desktop-lg) {
-
   .pensions .titles--bg::after {
     right: 30%;
   }

@@ -29,7 +29,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .shedule {
     background-image:
       url("../img/people.png"),
@@ -49,7 +48,6 @@
     background-color: rgba(240, 191, 122, 0.5);
   }
 
-
   .shedule__table td:nth-child(2n + 1) {
     width: 30%;
     text-align: right;
@@ -57,7 +55,7 @@
   }
 
   .shedule .shedule__table-line td {
-      padding: 20px 10px;
+    padding: 20px 10px;
   }
 
   .shedule__table-line td:nth-child(2n + 1) {
@@ -66,32 +64,30 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .shedule {
     position: relative;
     padding-bottom: 100px;
-    background-image: url();
 
-      &::after {
-        content: "";
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        width: 450px;
-        height: 500px;
-        // background-color: blue;
-        background-image: url(../img/people.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: bottom right;
-      }
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 450px;
+      height: 500px;
+      background-image: url("../img/people.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: bottom right;
+    }
   }
 
   .shedule__table td {
     width: 50%;
   }
-    .shedule .shedule__table-line td {
-      padding: 22px 10px;
+
+  .shedule .shedule__table-line td {
+    padding: 22px 10px;
   }
 
   .shedule__table td:nth-child(2n + 1) {
@@ -103,5 +99,4 @@
   .shedule__table-line td:nth-child(2n + 1) {
     padding: 22px;
   }
-
 }

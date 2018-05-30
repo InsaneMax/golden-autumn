@@ -1,7 +1,7 @@
 .reviews {
   padding: 20px 0;
   background-color: $color-6;
-  color: #ffffff
+  color: #ffffff;
 }
 
 .reviews--md {
@@ -14,7 +14,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .reviews--sm {
     display: none;
   }

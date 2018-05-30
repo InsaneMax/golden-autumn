@@ -41,7 +41,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .gallery {
     position: relative;
     padding: 0;
@@ -70,10 +69,10 @@
     font-size: 35px;
     line-height: 1.2em;
 
-      &::before {
-        top: -15px;
-        width: 80px;
-        height: 80px;
-      }
+    &::before {
+      top: -15px;
+      width: 80px;
+      height: 80px;
+    }
   }
 }

@@ -180,11 +180,10 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .price {
     background-image:
-    url("../img/leaf-bg-right.png"),
-    url("../img/leaf-bg-left.png");
+      url("../img/leaf-bg-right.png"),
+      url("../img/leaf-bg-left.png");
     background-repeat: no-repeat;
     background-position: right 125px, left 78px;
     padding-bottom: 115px;
@@ -256,6 +255,7 @@
 
   .price__features-item {
     padding-left: 90px;
+
     &::before {
       width: 75px;
       height: 75px;

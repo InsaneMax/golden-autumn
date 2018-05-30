@@ -1,6 +1,6 @@
-  .contacts {
-    position: relative;
-    padding: 20px 0;
+.contacts {
+  position: relative;
+  padding: 20px 0;
 }
 
 .contacts__inner {
@@ -11,12 +11,14 @@
   font-family: "Times New Roman", serif;
 }
 
-
 .contacts__tel {
   position: relative;
   display: inline-block;
   padding: 5px;
   padding-left: 60px;
+  margin: 10px 0;
+  font-size: 18px;
+  line-height: 1.2em;
 
   &::before {
     content: "";
@@ -55,12 +57,12 @@
 
 .contacts__email a {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.2em;
   color: #000000;
 
   &:hover {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #000000;
   }
 }
 
@@ -93,7 +95,6 @@
     border: 1px solid #847567;
     color: #412603;
   }
-
 }
 
 .contacts__submit-btn {
@@ -108,7 +109,7 @@
   transition: 500ms;
 
   &:hover {
-    background-color: #965112 ;
+    background-color: #965112;
   }
 
   &:active {
@@ -117,7 +118,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .contacts__inner--footer {
     display: flex;
     justify-content: space-between;
@@ -141,7 +141,8 @@
     box-sizing: border-box;
   }
 
-  .contacts__input, .contacts__field {
+  .contacts__input,
+  .contacts__field {
     padding: 8px 18px;
     font-size: 18px;
   }

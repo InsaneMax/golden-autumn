@@ -87,7 +87,6 @@
 }
 
 @media (max-width: $burger-only) {
-
   .main-nav--closed .main-nav__list {
     display: none;
   }
@@ -102,7 +101,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .main-nav {
     background-color: #ffffff;
     order: 3;
