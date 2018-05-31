@@ -15,18 +15,18 @@
   position: relative;
   display: inline-block;
   padding: 5px;
-  padding-left: 60px;
+  padding-left: 30px;
   margin: 10px 0;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.2em;
 
   &::before {
     content: "";
     position: absolute;
     top: 50%;
-    left: 7px;
-    width: 25px;
-    height: 25px;
+    left: 0;
+    width: 23px;
+    height: 23px;
     background-color: #3c2313;
     background-image: url("../img/phone.svg");
     border-radius: 50%;
@@ -38,16 +38,16 @@
   position: relative;
   display: inline-block;
   padding: 5px;
-  padding-left: 60px;
-  margin-bottom: 20px;
+  padding-left: 30px;
+  margin-bottom: 30px;
 
   &::before {
     content: "";
     position: absolute;
     top: 50%;
-    left: 7px;
-    width: 25px;
-    height: 25px;
+    left: 0;
+    width: 23px;
+    height: 23px;
     background-color: #3c2313;
     background-image: url("../img/email.svg");
     border-radius: 50%;
@@ -57,7 +57,7 @@
 
 .contacts__email a {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.2em;
   color: #000000;
 
@@ -74,8 +74,9 @@
 
 .contacts__input {
   padding: 8px 15px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   border: 1px solid #bab7b4;
+  border-radius: 5px;
   outline: none;
 
   &:focus {
@@ -86,8 +87,10 @@
 
 .contacts__field {
   padding: 10px 15px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   border: 1px solid #bab7b4;
+  border-radius: 5px;
+
   outline: none;
 
 
@@ -98,8 +101,8 @@
 }
 
 .contacts__submit-btn {
-  width: 120px;
-  padding: 7px 10px;
+  width: 85px;
+  padding: 5px 10px;
   background-color: $color-4;
   color: #ffffff;
   border: none;
@@ -144,6 +147,12 @@
   .contacts__input,
   .contacts__field {
     padding: 8px 18px;
+    font-size: 18px;
+  }
+
+  .contacts__submit-btn {
+    width: 130px;
+    padding: 8px 10px;
     font-size: 18px;
   }
 }

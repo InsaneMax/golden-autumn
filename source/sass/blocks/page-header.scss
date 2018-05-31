@@ -12,21 +12,23 @@
   @include container();
   text-align: center;
   color: $color-1;
-  margin-bottom: 70px;
+  margin-bottom: 90px;
 }
 
 .page-header__description {
-  width: 170px;
+  width: 220px;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 20px 0 10px 0;
+  font-size: 27px;
+  line-height: 1.1em;
 }
 
 .page-header__title {
   margin: 0;
-  padding: 30px 0;
+  padding: 10px 0;
   text-transform: uppercase;
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 37px;
+  line-height: 1.1em;
 }
 
 .page-header__decorative {
@@ -59,8 +61,8 @@
 .page-header__leaf {
   display: inline-block;
   vertical-align: middle;
-  width: 45px;
-  height: 45px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background-color: $color-2;
   background-image: url("../img/leaf.svg");
@@ -83,18 +85,23 @@
   }
 
   .page-header__description {
-    width: 265px;
-    padding: 10px 0;
-    font-size: 26px;
+    width: 245px;
+    padding: 22px 0 12px 0;
+    font-size: 28px;
     line-height: 1.1em;
     font-weight: normal;
   }
 
   .page-header__title {
-    padding: 15px 0;
-    font-size: 38px;
+    padding: 10px 0;
+    font-size: 50px;
     line-height: 1.1em;
     font-weight: normal;
+  }
+
+  .page-header__leaf {
+    width: 38px;
+    height: 38px;
   }
 
   .page-header__logo {

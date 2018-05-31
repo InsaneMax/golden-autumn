@@ -12,29 +12,37 @@
 .price__description {
   text-align: center;
   font-family: "Times New Roman", serif;
+  margin: 0;
+  padding: 10px 0;
 }
 
 .price__link-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  // margin-bottom: 40px;
 }
 
 .price__link {
   color: $color-red;
-  font-size: 22px;
-  line-height: 30px;
+  font-size: 26px;
+  line-height: 1.2em;
 
   &--orlovka {
     color: $color-1;
   }
 }
 
+.price__list {
+  margin-bottom: 10px;
+}
+
 .price__list-item {
   position: relative;
+  width: 140px;
+  min-height: 130px;
   padding: 20px;
-  margin-bottom: 45px;
-  min-height: 210px;
+  margin: 0 auto;
+  margin-top: 20px;
   background-image: url("../img/price-bg-1.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -47,9 +55,9 @@
     content: "";
     position: absolute;
     left: 50%;
-    top: -20px;
-    width: 70px;
-    height: 70px;
+    top: -15px;
+    width: 50px;
+    height: 50px;
     background-image: url("../img/marker-icon-1.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -81,9 +89,9 @@
 
 .price__list-title {
   padding: 7px 0;
-  margin: 40px 0 20px 0;
+  margin: 5px 0;
   border-bottom: 1px solid #ffffff;
-  font-size: 25px;
+  font-size: 16px;
   font-weight: normal;
 }
 
@@ -94,12 +102,16 @@
 }
 
 .price__numbers {
-  font-size: 50px;
+  font-size: 40px;
   line-height: 1em;
 }
 
 .price__btn {
   margin: 0 auto;
+}
+
+.price__features-text {
+  padding-left: 60px;
 }
 
 .price__features-item {
@@ -110,10 +122,10 @@
   &::before {
     content: "";
     position: absolute;
-    top: -5px;
-    left: 0;
-    width: 50px;
-    height: 50px;
+    top: 0;
+    left: 10px;
+    width: 37px;
+    height:  37px;
     background-image: url("../img/clock.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -164,7 +176,7 @@
   }
 
   &--reabilitation::before {
-    top: -13px;
+    top: 0px;
     background-image: url("../img/reabilitation.svg");
   }
 }
@@ -172,6 +184,9 @@
 .price__features-title {
   color: $color-1;
   font-weight: normal;
+  font-size: 16px;
+  line-height: 1.2em;
+  font-family: "Arial", serif;
 }
 
 .price__features-description {
@@ -213,6 +228,7 @@
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    margin-bottom: 30px;
   }
 
   .price__list-item {
@@ -236,12 +252,28 @@
     }
 
     &::before {
+      width: 70px;
+      height: 70px;
       top: -30px;
     }
   }
 
   .price__list-title {
-    font-size: 20px;
+    font-size: 24px;
+    padding: 10px 0;
+    margin: 15px 0 25px 0;
+  }
+
+  .price__numbers {
+    font-size: 68px;
+    line-height: 1em;
+  }
+
+  .price__day {
+    display: inline-block;
+    width: 80px;
+    font-size: 24px;
+    line-height: 1em;
   }
 
   .price__btn {
@@ -257,10 +289,15 @@
     padding-left: 90px;
 
     &::before {
-      width: 75px;
-      height: 75px;
+      left: 0;
+      width: 70px;
+      height: 70px;
     }
   }
+
+    .price__features-title {
+      font-size: 20px;
+    }
 
   .price__features-item--reabilitation::before {
     top: -22px;

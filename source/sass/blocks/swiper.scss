@@ -12,12 +12,12 @@
 }
 
 .gallery-top {
-  height: 400px;
+  height: 300px;
   width: 100%;
 }
 
 .gallery-thumbs {
-  height: 200px;
+  height: 100px;
   box-sizing: border-box;
   padding: 10px 0;
 }
@@ -48,4 +48,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .gallery-top {
+    height: 420px;
+  }
+
+  .gallery-thumbs {
+    height: 150px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .gallery-top {
+    height: 500px;
+  }
+
+  .gallery-thumbs {
+    height: 200px;
+  }
 }
