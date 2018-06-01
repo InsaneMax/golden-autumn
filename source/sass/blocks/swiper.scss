@@ -50,6 +50,15 @@
   align-items: center;
 }
 
+.swiper-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.swiper-box__item {
+  margin-bottom: 50px;
+}
+
 @media (min-width: $tablet-width) {
   .gallery-top {
     height: 420px;
@@ -67,5 +76,16 @@
 
   .gallery-thumbs {
     height: 200px;
+  }
+
+  .swiper-box {
+    width: 100%;
+    padding: 40px 5px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .swiper-box__item {
+    margin-bottom: 0;
   }
 }
