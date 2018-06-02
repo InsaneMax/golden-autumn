@@ -12,4 +12,3 @@
       navMain.classList.remove('main-nav--opened');
     }
   });
-
