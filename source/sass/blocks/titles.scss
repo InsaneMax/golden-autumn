@@ -90,9 +90,9 @@
 }
 
 @media (min-width: 455px) {
- .pensions .titles--bg::after {
+  .pensions .titles--bg::after {
     right: 20%;
- }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -149,13 +149,21 @@
 }
 
 @media (min-width: $desktop-width) {
+  .titles__header {
+    font-size: 55px;
+  }
+
   .titles--bg {
-    background-size: 747px;
+    background-size: 735px;
+  }
+
+  .pensions .titles--bg {
+    margin-bottom: 0;
   }
 
   .pensions .titles--bg::after {
     top: 95px;
-    right: 15%;
+    right: 20%;
   }
 }
 

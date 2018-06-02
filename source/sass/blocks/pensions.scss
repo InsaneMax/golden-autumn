@@ -85,6 +85,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .pensions {
+    padding-bottom: 0;
+  }
+
   .pensions__map {
     width: 765px;
     height: 727px;

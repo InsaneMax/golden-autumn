@@ -74,6 +74,12 @@
     }
   }
 
+  .address--footer .address__item {
+    width: 250px;
+  }
+}
+
+@media (min-width: $desktop-width) {
   .address__contacts {
     font-size: 20px;
     line-height: 1.2em;
@@ -91,4 +97,25 @@
     }
   }
 
+  .address--footer .address__item {
+    width: 400px;
+  }
+
+  .address--footer .address__link {
+    padding-left: 45px;
+    font-size: 30px;
+  }
+
+  .address--footer .address__contacts {
+    padding-left: 45px;
+  }
+
+  .address--footer .address__contacts br {
+    display: none;
+  }
+
+  .address--footer .address__link::before {
+    width: 37px;
+    height: 37px;
+  }
 }

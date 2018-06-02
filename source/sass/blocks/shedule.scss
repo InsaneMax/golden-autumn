@@ -1,11 +1,15 @@
 .shedule {
   position: relative;
   background-color: $color-2;
-  background-image: url("../img/people.png");
+  background-image: url("../img/people-mob@1x.png");
   background-repeat: no-repeat;
   background-position: right bottom;
-  background-size: 235px;
+  background-size: 213px;
   padding-bottom: 215px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/people-mob@2x.png");
+  }
 }
 
 .shedule__table {
@@ -29,13 +33,11 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .shedule {
     position: relative;
-    background-image:
-      url("../img/leaf-bg-top.png");
+    background-image: url("../img/leaf-bg-top.png");
     background-repeat: no-repeat;
-    background-position:  right top;
+    background-position: right top;
     background-size: 445px;
     padding-bottom: 168px;
     padding-top: 180px;
@@ -47,10 +49,14 @@
       bottom: 0;
       width: 370px;
       height: 370px;
-      background-image: url("../img/people.png");
+      background-image: url("../img/people-mob@1x.png");
       background-repeat: no-repeat;
       background-size: contain;
       background-position: bottom right;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/people-mob@2x.png");
+      }
     }
   }
 
@@ -88,24 +94,35 @@
       position: absolute;
       right: 0;
       bottom: 0;
-      width: 450px;
+      width: 350px;
       height: 500px;
-      background-image: url("../img/people.png");
+      background-image: url("../img/people-desktop.png");
       background-repeat: no-repeat;
       background-size: contain;
       background-position: bottom right;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/people-desktop@2x.png");
+      }
     }
   }
 
   .shedule__table td {
+    padding: 2px 20px;
     width: 50%;
   }
 
+  .shedule .shedule__table-line td {
+    padding: 5px 20px;
+  }
+
   .shedule__table td:nth-child(2n + 1) {
+    padding: 5px 20px;
     width: 32%;
     text-align: right;
   }
 
-  .shedule__table-line td:nth-child(2n + 1) {
-  }
+  // .shedule__table-line td:nth-child(2n + 1) {
+  //   padding: 3px 20px;
+  // }
 }

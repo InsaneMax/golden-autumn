@@ -78,6 +78,7 @@
   border: 1px solid #bab7b4;
   border-radius: 5px;
   outline: none;
+  font-family: "Arial", serif;
 
   &:focus {
     border: 1px solid #847567;
@@ -90,7 +91,7 @@
   margin-bottom: 15px;
   border: 1px solid #bab7b4;
   border-radius: 5px;
-
+  font-family: "Arial", serif;
   outline: none;
 
 
@@ -154,5 +155,34 @@
     width: 130px;
     padding: 8px 10px;
     font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__address-wrap {
+    width: 400px;
+  }
+
+  .contacts__form {
+    width: 40%;
+  }
+
+  .contacts__email a {
+    font-size: 20px;
+  }
+
+  .contacts__tel,
+  .contacts__email {
+    padding-left: 45px;
+    font-size: 20px;
+
+    &::before {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .contacts__field {
+    min-height: 115px;
   }
 }

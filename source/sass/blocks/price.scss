@@ -19,21 +19,47 @@
 .price__link-wrapper {
   display: flex;
   justify-content: space-between;
-  // margin-bottom: 40px;
 }
 
 .price__link {
-  color: $color-red;
+  color: $color-1;
   font-size: 26px;
   line-height: 1.2em;
+  text-decoration: underline;
+  cursor: pointer;
 
-  &--orlovka {
-    color: $color-1;
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &--active {
+    color: $color-red;
   }
 }
 
 .price__list {
   margin-bottom: 10px;
+}
+
+.price__address {
+  font-size: 14px;
+  line-height: 1.1em;
+}
+
+.price--penino .price__list--penino {
+  display: block;
+}
+
+.price--penino .price__list--orlovka {
+  display: none;
+}
+
+.price--orlovka .price__list--penino {
+  display: none;
+}
+
+.price--orlovka .price__list--orlovka {
+  display: block;
 }
 
 .price__list-item {
@@ -125,7 +151,7 @@
     top: 0;
     left: 10px;
     width: 37px;
-    height:  37px;
+    height: 37px;
     background-image: url("../img/clock.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -176,7 +202,7 @@
   }
 
   &--reabilitation::before {
-    top: 0px;
+    top: 0;
     background-image: url("../img/reabilitation.svg");
   }
 }
@@ -186,7 +212,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 1.2em;
-  font-family: "Arial", serif;
+  font-family: "Times New Roman", sans-serif;
 }
 
 .price__features-description {
@@ -231,6 +257,26 @@
     margin-bottom: 30px;
   }
 
+  .price__address {
+    font-size: 16px;
+  }
+
+  .price--penino .price__list--penino {
+    display: flex;
+  }
+
+  .price--penino .price__list--orlovka {
+    display: none;
+  }
+
+  .price--orlovka .price__list--penino {
+    display: none;
+  }
+
+  .price--orlovka .price__list--orlovka {
+    display: flex;
+  }
+
   .price__list-item {
     min-height: 280px;
     width: 202px;
@@ -247,8 +293,6 @@
 
     &--qualified {
       background-image: url("../img/price-bg-3-tabl.svg");
-      word-break: keep-all;
-      hyphens: auto;
     }
 
     &::before {
@@ -259,9 +303,14 @@
   }
 
   .price__list-title {
-    font-size: 24px;
+    font-size: 22px;
     padding: 10px 0;
     margin: 15px 0 25px 0;
+  }
+
+  .price__list-item--qualified .price__list-title {
+    word-break: break-all;
+    hyphens: auto;
   }
 
   .price__numbers {
@@ -295,9 +344,9 @@
     }
   }
 
-    .price__features-title {
-      font-size: 20px;
-    }
+  .price__features-title {
+    font-size: 22px;
+  }
 
   .price__features-item--reabilitation::before {
     top: -22px;
@@ -308,5 +357,15 @@
     border-top: 1px solid $color-3;
     font-size: 20px;
     line-height: 1.2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price__list {
+    margin-top: 30px;
+  }
+
+  .price__link {
+    font-size: 37px;
   }
 }
