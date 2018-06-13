@@ -46,6 +46,11 @@
   line-height: 1.1em;
 }
 
+.price__number {
+  font-size: 20px;
+  color: $color-red;
+}
+
 .price--penino .price__list--penino {
   display: block;
 }

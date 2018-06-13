@@ -22,18 +22,18 @@
     opacity: 0.8;
   }
 
-  &--active {
-    color: $color-red;
-  }
+  // &--active {
+  //   color: $color-red;
+  // }
 }
 
 .gallery__svg {
   fill: $color-1;
 }
 
-.gallery__item--active .gallery__svg {
-  fill: $color-red;
-}
+// .gallery__item--active .gallery__svg {
+//   fill: $color-red;
+// }
 
 @media (min-width: $tablet-width) {
   .gallery {

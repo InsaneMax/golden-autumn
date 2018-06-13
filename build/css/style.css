@@ -974,14 +974,9 @@ ul {
   text-align: center; }
   .gallery__item:hover {
     opacity: 0.8; }
-  .gallery__item--active {
-    color: #be1e2d; }
 
 .gallery__svg {
   fill: #694323; }
-
-.gallery__item--active .gallery__svg {
-  fill: #be1e2d; }
 
 @media (min-width: 720px) {
   .gallery {
@@ -1075,6 +1070,10 @@ ul {
 .price__address {
   font-size: 14px;
   line-height: 1.1em; }
+
+.price__number {
+  font-size: 20px;
+  color: #be1e2d; }
 
 .price--penino .price__list--penino {
   display: block; }
