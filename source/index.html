@@ -47,7 +47,7 @@
           <li class="info__item  info__item--marker">Орловка</li>
         </ul>
         <ul class="info__list  info__list--contacts">
-          <li class="info__item  info__item--mob-hidden">+7 985 787 94 13</li>
+          <li class="info__item  info__item--mob-hidden"><a class="info__tel" href="tel: +79857879413">+7 985 787 94 13</a></li>
           <li class="info__item  info__item--border"><a class="info__link" href="#contacts">Бронировать</a></li>
           <li class="info__item  info__item--mob-hidden"><a class="info__link" href="#contacts">Связаться с нами</a></li>
         </ul>
@@ -59,7 +59,7 @@
       <div class="main-nav__burger">
         <button class="main-nav__btn"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__booking">
-          <span class="main-nav__booking-item">+7 985 787 94 13</span>
+          <span class="main-nav__booking-item"><a class="main-nav__tel" href="tel: +79857879413">+7 985 787 94 13</a></span>
           <span class="main-nav__booking-item">
             <a class="main-nav__link" href="#contacts">Бронировать</a>
           </span>
@@ -651,7 +651,7 @@
                 </p>
               </li>
             </ul>
-            <span class="contacts__tel">+7 985 787 94 13</span>
+            <span class="contacts__tel"><a class="contacts__tel-link" href="tel: +79857879413">+7 985 787 94 13</a></span>
             <span class="contacts__email"><a href="mailto:dom.penino@gamil.com">dom.penino@gmail.com</a></span>
           </div>
           <form class="contacts__form" method="POST" action="https://formspree.io/dom.penino@gmail.com">
@@ -677,8 +677,15 @@
             <li class="info__item  info__item--marker">Пенино</li>
             <li class="info__item  info__item--marker">Орловка</li>
           </ul>
+
+          <ul class="info__socials">
+            <li class="info__social-item  info__social-item--text">Мы в соц. сетях:</li>
+            <li class="info__social-item"><a class="info__social  info__social--vk" href="https://vk.com/zolotoosen" target = "_blank">Вконтакте</a></li>
+            <li class="info__social-item"><a class="info__social  info__social--ok" href="https://ok.ru/group/54207395987631" target = "_blank">Одноклассники</a></li>
+          </ul>
+
           <ul class="info__list  info__list--contacts">
-            <li class="info__item  info__item--mob-hidden">+7 985 787 94 13</li>
+            <li class="info__item  info__item--mob-hidden"><a class="info__tel--footer" href="tel: +79857879413">+7 985 787 94 13</a></li>
             <li class="info__item  info__item--border"><a class="info__link" href="#">Бронировать</a></li>
             <li class="info__item  info__item--mob-hidden"><a class="info__link" href="#">Связаться с нами</a></li>
           </ul>
@@ -687,6 +694,12 @@
 
     </div>
   </footer>
+  <div class="popup hidden">
+    <div class="popup__container">
+      <p class="popup__text">Спасибо за Ваше обращение. <br> Мы свяжемся с Вами в скором времени.</p>
+      <button class="popup__btn">Закрыть</button>
+    </div>
+  </div>
 
   <script src="js/main.js"></script>
   <script src="js/navigation.js"></script>

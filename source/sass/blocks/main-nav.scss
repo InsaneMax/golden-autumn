@@ -12,6 +12,11 @@
   padding: 10px 0;
 }
 
+.main-nav__tel {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .main-nav__btn {
   width: 36px;
   height: 36px;
@@ -105,6 +110,12 @@
     background-color: #ffffff;
     order: 3;
   }
+
+  .main-nav__tel {
+    display: none;
+    color: red;
+    text-decoration: none;
+}
 
   .main-nav--closed .main-nav__btn::before {
     background-color: $color-1;
