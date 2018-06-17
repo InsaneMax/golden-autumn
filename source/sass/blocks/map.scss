@@ -1,0 +1,22 @@
+.map {
+  position: fixed;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.4);
+  top: 55%;
+  left: 50%;
+  width: 85%;
+  height: 500px;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.map__close {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  font-size: 16px;
+  line-height: 1em;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+}
