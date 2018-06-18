@@ -12,7 +12,7 @@
 }
 
 .gallery-top {
-  height: 300px;
+  height: 350px;
   width: 100%;
 }
 
@@ -39,7 +39,7 @@
 // bottom slider
 
 .gallery-top-2 {
-  height: 300px;
+  height: 350px;
   width: 100%;
 }
 
@@ -83,19 +83,19 @@
 
 @media (min-width: $tablet-width) {
   .gallery-top {
-    height: 420px;
+    height: 550px;
   }
 
   .gallery-thumbs {
-    height: 150px;
+    height: 170px;
   }
 
   .gallery-top-2 {
-    height: 420px;
+    height: 550px;
   }
 
   .gallery-thumbs-2 {
-    height: 150px;
+    height: 170px;
   }
 }
 
