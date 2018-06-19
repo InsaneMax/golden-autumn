@@ -15,83 +15,92 @@ var orlovkaLinkFourth = document.querySelector('.info__orlovka--link');
 var closeButtonPenino = document.querySelector('.map .map__close--penino');
 var closeButtonOrlovka = document.querySelector('.map .map__close--orlovka');
 
-// var onMapEscPress = function (evt) {
-//   if (evt.keyCode === ESC_KEYCODE) {
-//     closeMapPenino() || closeMapOrlovka();
-//   }
-// };
+var onMapEscPress = function (evt) {
+  if (evt.keyCode === ESC_KEYCODE) {
+    closeMapPenino() || closeMapOrlovka();
+  }
+};
 
-// var showMapPenino = function () {
-//   peninoMap.classList.remove('hidden');
-//   document.addEventListener('keydown', onMapEscPress);
-// }
+var showMapPenino = function () {
+  peninoMap.classList.remove('hidden');
+  document.addEventListener('keydown', onMapEscPress);
+}
 
-// var showMapOrlovka = function () {
-//   orlovkaMap.classList.remove('hidden');
-//   document.addEventListener('keydown', onMapEscPress);
-// }
+var showMapOrlovka = function () {
+  orlovkaMap.classList.remove('hidden');
+  document.addEventListener('keydown', onMapEscPress);
+}
 
-// var closeMapPenino = function () {
-//   peninoMap.classList.add('hidden');
-//   document.removeEventListener('keydown', onMapEscPress);
-// }
+var closeMapPenino = function () {
+  peninoMap.classList.add('hidden');
+  document.removeEventListener('keydown', onMapEscPress);
+}
 
-// var closeMapOrlovka = function () {
-//   orlovkaMap.classList.add('hidden');
-//   document.removeEventListener('keydown', onMapEscPress);
-// }
+var closeMapOrlovka = function () {
+  orlovkaMap.classList.add('hidden');
+  document.removeEventListener('keydown', onMapEscPress);
+}
 
-// peninoLinkFirst.addEventListener('click', function () {
-//   showMapPenino();
-// });
+peninoLinkFirst.addEventListener('click', function () {
+  showMapPenino();
+});
 
-// orlovkaLinkFirst.addEventListener('click', function () {
-//   showMapOrlovka();
-// });
+orlovkaLinkFirst.addEventListener('click', function () {
+  showMapOrlovka();
+});
 
-// peninoLinkSecond.addEventListener('click', function () {
-//   showMapPenino();
-// });
+peninoLinkSecond.addEventListener('click', function () {
+  showMapPenino();
+});
 
-// orlovkaLinkSecond.addEventListener('click', function () {
-//   showMapOrlovka();
-// });
+orlovkaLinkSecond.addEventListener('click', function () {
+  showMapOrlovka();
+});
 
-// peninoLinkThird.addEventListener('click', function () {
-//   showMapPenino();
-// });
+peninoLinkThird.addEventListener('click', function () {
+  showMapPenino();
+});
 
-// orlovkaLinkThird.addEventListener('click', function () {
-//   showMapOrlovka();
-// });
+orlovkaLinkThird.addEventListener('click', function () {
+  showMapOrlovka();
+});
 
-// peninoLinkFourth.addEventListener('click', function () {
-//   showMapPenino();
-// });
+peninoLinkFourth.addEventListener('click', function () {
+  showMapPenino();
+});
 
-// orlovkaLinkFourth.addEventListener('click', function () {
-//   showMapOrlovka();
-// });
+orlovkaLinkFourth.addEventListener('click', function () {
+  showMapOrlovka();
+});
 
-// closeButtonPenino.addEventListener('click', function (evt) {
-//   evt.preventDefault();
-//   closeMapPenino();
-// });
+closeButtonPenino.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  closeMapPenino();
+});
 
-// closeButtonOrlovka.addEventListener('click', function (evt) {
-//   evt.preventDefault();
-//   closeMapOrlovka();
-// });
+closeButtonOrlovka.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  closeMapOrlovka();
+});
 
 var submitButton = document.querySelector('.contacts__submit-btn');
 var thanksPopup = document.querySelector('.popup');
+var closePopup = document.querySelector('.popup__btn');
 
 submitButton.addEventListener('click', function() {
   thanksPopup.classList.remove('hidden');
 })
 
+closePopup.addEventListener('click', function() {
+  thanksPopup.classList.add('hidden');
+})
+
 var galleryItemPenino = document.querySelector('.gallery .gallery__item--penino');
 var galleryItemOrlovka = document.querySelector('.gallery .gallery__item--orlovka');
+
+var galleryTopPenino = document.querySelector('.swiper-box .gallery-top');
+var galleryTopOrlovka = document.querySelector('.swiper-box .gallery-top-2');
+
 var sliderPenino = document.querySelector('.swip--penino');
 var sliderOrlovka = document.querySelector('.swip--orlovka');
 
@@ -99,15 +108,15 @@ console.log(galleryItemPenino);
 console.log(galleryItemOrlovka);
 
 galleryItemPenino.addEventListener('click', function() {
-  console.log('click penino');
   sliderPenino.classList.remove('hidden');
   sliderOrlovka.classList.add('hidden');
+  galleryItemOrlovka.classList.remove('gallery__item--active');
+  galleryItemPenino.classList.add('gallery__item--active');
 });
 
 galleryItemOrlovka.addEventListener('click', function() {
-  console.log('click orlovka')
   sliderOrlovka.classList.remove('hidden');
   sliderPenino.classList.add('hidden');
+  galleryItemPenino.classList.remove('gallery__item--active')
+  galleryItemOrlovka.classList.add('gallery__item--active')
 });
-
-

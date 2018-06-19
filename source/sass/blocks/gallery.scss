@@ -17,6 +17,7 @@
   font-size: 26px;
   line-height: 1.2em;
   text-align: center;
+  cursor: pointer;
 
   &:hover {
     opacity: 0.8;
@@ -37,23 +38,11 @@
 
 @media (min-width: $tablet-width) {
   .gallery {
-    position: relative;
     padding: 0;
     margin-top: -1px;
     background-color: $color-5;
-    z-index: -2;
+    background-image: linear-gradient(to right,  #f1d68f 50%, #f6e8bb 50%);
     margin-bottom: 35px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 50%;
-      height: 100%;
-      background-color: #f6e8bb;
-      z-index: -1;
-    }
   }
 
   .gallery__list-wrapper {

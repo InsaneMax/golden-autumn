@@ -1,8 +1,8 @@
 .pensions {
   position: relative;
   background-color: $color-2;
-  z-index: -2;
   padding-bottom: 30px;
+  background-color: #f6e8bb;
 }
 
 .pensions__map {
@@ -11,20 +11,7 @@
 
 @media (min-width: $tablet-width) {
   .pensions {
-    position: relative;
-    background-color: $color-5;
-    z-index: -2;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 50%;
-      height: 100%;
-      background-color: #f6e8bb;
-      z-index: -1;
-    }
+    background-image: linear-gradient(to right,  #f1d68f 50%, #f6e8bb 50%);
   }
 
   .pensions__map {

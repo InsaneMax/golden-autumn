@@ -110,8 +110,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 19px;
-  background-position: 50% 0px;
-  // background-color: #000;
+  background-position: 50%;
 
   &--ok {
     background-image: url("../img/ok-white.png");
@@ -244,13 +243,13 @@
     width: 155px;
   }
 
-.info__social-item--text {
-  display: flex;
-  align-items: center;
-  font-size: 12px;
-  line-height: 1.2em;
-  color: #ffffff;
-}
+  .info__social-item--text {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 1.2em;
+    color: #ffffff;
+  }
 
   .info--footer .info__item--marker {
     padding: 5px;

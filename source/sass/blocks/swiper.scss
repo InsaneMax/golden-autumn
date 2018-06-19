@@ -100,18 +100,19 @@
 }
 
 @media (min-width: $desktop-width) {
+
   .swiper-box {
     display: flex;
     justify-content: center;
   }
 
   .swip {
-    width: 500px;
+    width: 48%;
     margin: 10px;
   }
 
   .gallery-top {
-    height: 500px;
+    height: 600px;
   }
 
   .gallery-thumbs {
@@ -119,7 +120,7 @@
   }
 
   .gallery-top-2 {
-    height: 500px;
+    height: 600px;
   }
 
   .gallery-thumbs-2 {
