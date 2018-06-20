@@ -104,9 +104,6 @@ var galleryTopOrlovka = document.querySelector('.swiper-box .gallery-top-2');
 var sliderPenino = document.querySelector('.swip--penino');
 var sliderOrlovka = document.querySelector('.swip--orlovka');
 
-console.log(galleryItemPenino);
-console.log(galleryItemOrlovka);
-
 galleryItemPenino.addEventListener('click', function() {
   sliderPenino.classList.remove('hidden');
   sliderOrlovka.classList.add('hidden');
